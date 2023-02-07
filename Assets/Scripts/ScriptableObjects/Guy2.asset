@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Guy2
   m_EditorClassIdentifier: 
-  name: Grumbo
-  dialogue:
-  - eee
-  - fff
-  - ggg
+  name: Tingle
+  dialogueSet1: []
   playerDialogue: []

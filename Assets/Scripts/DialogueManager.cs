@@ -65,16 +65,16 @@ public class DialogueManager : MonoBehaviour
         curResponseTracker = 0;
         dialogueUI.SetActive(true);
         npcName.text = npc.name;
-        npcDialogueBox.text = npc.dialogue[curResponseTracker];
+        npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
     }
 
     void ContinueConversation()
     {
         curResponseTracker++;
 
-        if(curResponseTracker < npc.dialogue.Length)
+        if(curResponseTracker < npc.dialogueSet1.Length)
         {
-            npcDialogueBox.text = npc.dialogue[curResponseTracker];
+            npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
         } else
         {
             EndConversation();
