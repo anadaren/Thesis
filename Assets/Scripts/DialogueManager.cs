@@ -19,9 +19,12 @@ public class DialogueManager : MonoBehaviour
     private Animator anim;
     private AudioSource talking;
 
+    public string baseAnimText = "Idle";
+    public string talkAnimText = "Talking";
+
     public Text npcName;
     public Text npcDialogueBox;
-    public Text playerResponse;
+    //public Text playerResponse;
 
     void Start()
     {
@@ -61,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         //play talking sound
         talking.Play();
         //play talking animation
-        anim.Play("Talking");
+        anim.Play(talkAnimText);
         curResponseTracker = 0;
         dialogueUI.SetActive(true);
         npcName.text = npc.name;
@@ -88,7 +91,7 @@ public class DialogueManager : MonoBehaviour
         //STOP talking sound
         talking.Stop();
         //STOP talking animation
-        anim.Play("Idle");
+        anim.Play(baseAnimText);
         dialogueUI.SetActive(false);
     }
 
