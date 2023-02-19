@@ -40,15 +40,18 @@ public class GameManager : MonoBehaviour
 
     public void eventFour()
     {
-        music.Stop();
+        
     }
 
     public void endingScene()
     {
+        // Sets off end cutscene
         StartCoroutine(pauseForEffect());
         
         // Disable ticking
         ticking.Stop();
+        // FIXME: Put this line in event 4 at some point
+        music.Stop();
         // Enable ending sound effects
         ticking.clip = endingSound;
         ticking.Play();
@@ -63,13 +66,12 @@ public class GameManager : MonoBehaviour
 
         //Spawns big guy and animates office walls
         GameObject bigBoss = Instantiate(bigGuy, new Vector3(0,2,-60), Quaternion.Euler(new Vector3(0,90,0)));
-        
         office.GetComponent<Animator>().Play("OfficeAnim");
     }
 
     IEnumerator endCount()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(20);
         SceneManager.LoadScene("Credits");
     }
 }

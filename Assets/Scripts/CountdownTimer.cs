@@ -12,6 +12,7 @@ public class CountdownTimer : MonoBehaviour
 
     public GameManager events;
 
+    public float gameStage = 1;
     public bool twoReached = false;
     public bool threeReached = false;
     public bool fourReached = false;
@@ -34,14 +35,17 @@ public class CountdownTimer : MonoBehaviour
             //Triggers events at different times
             if(currentTime <= 450)
             {
+                gameStage = 2;
                 events.eventTwo();
                 twoReached = true;
             } else if(currentTime <= 300)
             {
+                gameStage = 3;
                 events.eventThree();
                 threeReached = true;
             } else if(currentTime <= 150)
             {
+                gameStage = 4;
                 events.eventFour();
                 fourReached = true;
             }
