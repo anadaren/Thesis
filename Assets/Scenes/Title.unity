@@ -1630,6 +1630,11 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3116687730381392099, guid: f8e8c456e61c38045914d695c4caa394,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8e8c456e61c38045914d695c4caa394, type: 3}
 --- !u!1 &1147775981 stripped
@@ -1864,7 +1869,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: About the project
+  m_text: 'Something''s Coming is my MS Master''s Thesis Project. You can read more
+    about my dev process at anastasiagreen.com/Somethings-Coming
+
+
+    Use the Trigger
+    Buttons to teleport and the Grip Buttons to interact with objects and UI.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
