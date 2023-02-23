@@ -27,27 +27,38 @@ public class CountdownTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         // Displays Time
-        if(currentTime >= 0)
+        if (currentTime >= 0)
         {
             currentTime -= Time.deltaTime;
-            
+
             //Triggers events at different times
-            if(currentTime <= 450)
+            if (currentTime <= 450 && currentTime > 300)
             {
                 gameStage = 2;
-                events.eventTwo();
-                twoReached = true;
-            } else if(currentTime <= 300)
+                
+                if(twoReached == false)
+                {
+                    events.eventTwo();
+                    twoReached = true;
+                }
+            } else if(currentTime <= 300 && currentTime > 150)
             {
                 gameStage = 3;
-                events.eventThree();
-                threeReached = true;
+                if (threeReached == false)
+                {
+                    events.eventThree();
+                    threeReached = true;
+                }
             } else if(currentTime <= 150)
             {
                 gameStage = 4;
-                events.eventFour();
-                fourReached = true;
+                if (fourReached == false)
+                {
+                    events.eventFour();
+                    fourReached = true;
+                }
             }
         }
         else

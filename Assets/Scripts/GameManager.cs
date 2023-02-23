@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject office;
     public GameObject bigGuy;
+    public GameObject head;
 
     public AudioSource ticking;
     public AudioClip endingSound;
@@ -30,17 +31,24 @@ public class GameManager : MonoBehaviour
     
     public void eventTwo()
     {
-
+        // Switches Dialogue to Set 2
     }
 
     public void eventThree()
     {
-
+        // Switches Dialogue to Set 3
+        // Head
+        GameObject fallingHead = Instantiate(head, new Vector3(-17, -10, -5), Quaternion.Euler(new Vector3(0, 0, 90)));
     }
 
     public void eventFour()
     {
-        
+        //switch office materials
+
+
+        // Switches Dialogue to Set 4
+        // Stops music
+        music.Stop();
     }
 
     public void endingScene()
@@ -50,8 +58,7 @@ public class GameManager : MonoBehaviour
         
         // Disable ticking
         ticking.Stop();
-        // FIXME: Put this line in event 4 at some point
-        music.Stop();
+
         // Enable ending sound effects
         ticking.clip = endingSound;
         ticking.Play();
