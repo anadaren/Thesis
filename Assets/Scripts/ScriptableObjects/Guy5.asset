@@ -17,7 +17,16 @@ MonoBehaviour:
   - jjjjjj
   - kkkkk
   - lllllll
-  dialogueSet2: []
-  dialogueSet3: []
-  dialogueSet4: []
+  dialogueSet2:
+  - a
+  - aa
+  - aaa
+  dialogueSet3:
+  - b
+  - bb
+  - bbb
+  dialogueSet4:
+  - c
+  - cc
+  - ccc
   playerDialogue: []

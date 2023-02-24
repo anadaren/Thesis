@@ -38,8 +38,8 @@ public class TaskInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objectSlider.maxValue = 90;
-        objectSlider.value = 90;
+        objectSlider.maxValue = 120;
+        objectSlider.value = objectSlider.maxValue;
         //timeCounter = 60;
             //stopTimer = false;
         //objectSlider.maxValue = gameTime;
@@ -51,15 +51,15 @@ public class TaskInteraction : MonoBehaviour
         // max amount of time on slider goes down as time goes down
         if (CountdownTimer.currentTime >= 450)
         {
-            objectSlider.maxValue = 90;
+            objectSlider.maxValue = 120;
         }
         else if (CountdownTimer.currentTime >= 300)
         {
-            objectSlider.maxValue = 60;
+            objectSlider.maxValue = 90;
         }
         else if (CountdownTimer.currentTime >= 150)
         {
-            objectSlider.maxValue = 30;
+            objectSlider.maxValue = 60;
         }
         else if (CountdownTimer.currentTime == 0)
         {
@@ -70,10 +70,10 @@ public class TaskInteraction : MonoBehaviour
         objectSlider.value -= Time.deltaTime;
 
 
-        if (objectSlider.value < 10 && !siren.isPlaying)
+        if (objectSlider.value < 5 && !siren.isPlaying)
         {
             siren.Play();
-        } else if (objectSlider.value > 10 && siren.isPlaying)
+        } else if (objectSlider.value > 5 && siren.isPlaying)
         {
             siren.Stop();
         }
@@ -96,7 +96,7 @@ public class TaskInteraction : MonoBehaviour
     public void taskCheck()
     {
         distance = Vector3.Distance(player.transform.position, this.transform.position);
-        if (distance <= 4f)
+        if (distance <= 6f)
         {
             if (objectName == "Messages")
             {

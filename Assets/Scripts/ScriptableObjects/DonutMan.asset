@@ -12,6 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: DonutMan
   m_EditorClassIdentifier: 
-  name: Donut Man
-  dialogueSet1: []
+  NPCname: Donut Man
+  dialogueSet1:
+  - aaaa
+  - aaaaaaaa
+  - aaaaaaaaaaa
+  dialogueSet2:
+  - bbbbbb
+  - bbbbbbbb
+  - bbbbbbbbbb
+  - bbbbbbbbbbbbbbbbbbbb
+  dialogueSet3:
+  - c
+  - cc
+  - ccc
+  - cccc
+  dialogueSet4:
+  - d
+  - dd
+  - ddd
+  - ddddd
   playerDialogue: []

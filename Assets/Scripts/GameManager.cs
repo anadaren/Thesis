@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
 
     // Changes Background Color
     public Camera cam;
-    public Color color1 = Color.blue;
-    public Color color2 = Color.red;
+    public Color color1;
+    public Color color2;
 
 
     public 
