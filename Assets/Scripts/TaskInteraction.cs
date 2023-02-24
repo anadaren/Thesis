@@ -68,6 +68,16 @@ public class TaskInteraction : MonoBehaviour
         }
 
         objectSlider.value -= Time.deltaTime;
+
+
+        if (objectSlider.value < 10 && !siren.isPlaying)
+        {
+            siren.Play();
+        } else if (objectSlider.value > 10 && siren.isPlaying)
+        {
+            siren.Stop();
+        }
+
         //taskCheck();
 
         /*float time = gameTime - Time.time;
@@ -119,11 +129,13 @@ public class TaskInteraction : MonoBehaviour
         //{
         //    siren.Play();
         //}
+        objectSlider.value = objectSlider.maxValue;
     }
 
     void ButtonPress()
     {
         //anim.Play(animName);
+        objectSlider.value = objectSlider.maxValue;
     }
 
     void WaterPlants()
@@ -132,31 +144,35 @@ public class TaskInteraction : MonoBehaviour
 
         //waterMeter++;
         //if (waterMeter <= 0)
-       // {
+        // {
 
-       // }
+        // }
+        objectSlider.value = objectSlider.maxValue;
     }
 
     void FixPrinter()
     {
         //anim.Play(animName);
-        
+        objectSlider.value = objectSlider.maxValue;
     }
 
     void FilePapers()
     {
         //anim.Play(animName);
+        objectSlider.value = objectSlider.maxValue;
     }
 
     void GetCoffee()
     {
         //anim.Play(animName);
         //GameObject newCoffee = Instantiate(spawnObj, new Vector3(0,0,0), Quaternion.Euler(new Vector3(0,0,0)));
+        objectSlider.value = objectSlider.maxValue;
     }
 
     void GetMail()
     {
         //anim.Play(animName);
         //GameObject newMail = Instantiate(spawnObj, new Vector3(0,0,0), Quaternion.Euler(new Vector3(0,0,0)));
+        objectSlider.value = objectSlider.maxValue;
     }
 }

@@ -26,6 +26,8 @@ public class DialogueManager : MonoBehaviour
     public Text npcDialogueBox;
     //public Text playerResponse;
 
+    public GameManager dialogueSet;
+
     void Start()
     {
         //Animation
@@ -68,17 +70,69 @@ public class DialogueManager : MonoBehaviour
         curResponseTracker = 0;
         dialogueUI.SetActive(true);
         npcName.text = npc.name;
-        npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
+
+        // Dialogue set changes as time goes on
+        if (GameManager.currentDialogueSet == 1) 
+        {
+            npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
+        } else if (GameManager.currentDialogueSet == 2)
+        {
+            npcDialogueBox.text = npc.dialogueSet2[curResponseTracker];
+        } else if (GameManager.currentDialogueSet == 3)
+        {
+            npcDialogueBox.text = npc.dialogueSet3[curResponseTracker];
+        } else if (GameManager.currentDialogueSet == 4)
+        {
+            npcDialogueBox.text = npc.dialogueSet4[curResponseTracker];
+        }
     }
 
     void ContinueConversation()
     {
         curResponseTracker++;
 
-        if(curResponseTracker < npc.dialogueSet1.Length)
+        if (GameManager.currentDialogueSet == 1)
         {
-            npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
-        } else
+            if (curResponseTracker < npc.dialogueSet1.Length)
+            {
+                npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
+            }
+            else
+            {
+                EndConversation();
+            }
+        } else if (GameManager.currentDialogueSet == 2)
+        {
+            if (curResponseTracker < npc.dialogueSet2.Length)
+            {
+                npcDialogueBox.text = npc.dialogueSet2[curResponseTracker];
+            }
+            else
+            {
+                EndConversation();
+            }
+        } else if (GameManager.currentDialogueSet == 3)
+        {
+            if (curResponseTracker < npc.dialogueSet3.Length)
+            {
+                npcDialogueBox.text = npc.dialogueSet3[curResponseTracker];
+            }
+            else
+            {
+                EndConversation();
+            }
+        } else if (GameManager.currentDialogueSet == 4)
+        {
+            if (curResponseTracker < npc.dialogueSet4.Length)
+            {
+                npcDialogueBox.text = npc.dialogueSet4[curResponseTracker];
+            }
+            else
+            {
+                EndConversation();
+            }
+        }
+        else
         {
             EndConversation();
         }
