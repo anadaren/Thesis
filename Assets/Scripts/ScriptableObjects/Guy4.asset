@@ -12,6 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Guy4
   m_EditorClassIdentifier: 
-  name: Scramble
-  dialogueSet1: []
+  NPCname: Smerl
+  dialogueSet1:
+  - "Hum hum, I love filing papers!\r"
+  - Love the smell, love the sound, even love the taste!
+  - "I\u2019ve been doing this for years, seventy hours a week, and I love every
+    minute of it!"
+  - Day in day out, just papers papers papers!
+  - I love making copies too!
+  dialogueSet2:
+  - "My favorite thing about filing papers is figuring out where they go in the cabinets.\r"
+  - "Some people may think this job is dull, but I don\u2019t.\r"
+  - "I like tedious tasks, I don\u2019t have to think too much."
+  - "Easiest thing in the world to me, I wouldn\u2019t want to do anything else."
+  dialogueSet3:
+  - "Uh-oh the lights are off\u2026looks like something\u2019s happeningggg.\r"
+  - But whatever happens, at least I'll still have my papers!!
+  dialogueSet4:
+  - "I\u2026still love filing papers."
+  - "But I don\u2019t know why all of this is happening. I just wanted to file my
+    papers."
+  - "You know what happens at the end of the timer?\r"
+  - "You know what happens at the end of the timer?\r"
+  - "We all die, that\u2019s what."
+  - "It doesn\u2019t matter how it happens, but it will.\r"
+  - "There was nothing we could do.\r"
+  - "It doesn\u2019t matter how it happens, but it will.\r"
+  - "I wanted to distract myself with my papers for as long as I could. All I had
+    was my papers.\r"
+  - "I thought if I could distract myself long enough then maybe I wouldn\u2019t
+    even notice when it all went dark.\r"
+  - "But there\u2019s no getting around this."
+  - Thanks for listening though, friend.
   playerDialogue: []

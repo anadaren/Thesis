@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public GameObject donutGuy;
     public GameObject donutCanvas;
 
+    public GameObject headUI;
+    public GameObject wallWriting;
+
     public AudioSource ticking;
     public AudioClip endingSound;
 
@@ -61,6 +64,10 @@ public class GameManager : MonoBehaviour
 
         // Head
         GameObject fallingHead = Instantiate(head, new Vector3(-17, -10, -5), Quaternion.Euler(new Vector3(0, 0, 90)));
+        headUI.SetActive(true);
+
+        // Wall Writing
+        wallWriting.SetActive(true);
     }
 
     public void eventFour()
@@ -74,6 +81,8 @@ public class GameManager : MonoBehaviour
             GameObject child = office.transform.GetChild(i).gameObject;
             child.GetComponent<MeshRenderer>().material = Material1;
         }
+
+        
 
         // Disables donut man
         donutGuy.SetActive(false);
@@ -106,6 +115,7 @@ public class GameManager : MonoBehaviour
         //Spawns big guy and animates office walls
         GameObject bigBoss = Instantiate(bigGuy, new Vector3(0,2,-60), Quaternion.Euler(new Vector3(0,90,0)));
         outside.SetActive(true);
+        wallWriting.SetActive(false);
         office.GetComponent<Animator>().Play("OfficeAnim");
     }
 

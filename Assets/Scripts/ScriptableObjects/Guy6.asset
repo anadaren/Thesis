@@ -12,6 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Guy6
   m_EditorClassIdentifier: 
-  name: Pip
-  dialogueSet1: []
+  NPCname: Tom
+  dialogueSet1:
+  - "That\u2019s what they want you to think, man. I\u2019m telling you, when that
+    thing reaches zero, poof, we\u2019re all gonna be in a lab where they start poking
+    us with big metal sticks until we keel over.\r"
+  - "Doesn\u2019t look like it\u2019s working. Any other ideas?\r"
+  dialogueSet2:
+  - "I don\u2019t like the way that things looking at me\u2026"
+  dialogueSet3:
+  - "Nah, that\u2019s stupid.\r"
+  - "When would aliens get in here? We've been standing here all day.\r"
+  dialogueSet4:
+  - "I tried to tell you!\r"
+  - "Nothing to do. I\u2019m just one guy.\r"
+  - "You have a wife?\r"
+  - Fair enough. Tell my fake wife I love her too.
   playerDialogue: []

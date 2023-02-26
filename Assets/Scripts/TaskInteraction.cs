@@ -55,11 +55,11 @@ public class TaskInteraction : MonoBehaviour
         }
         else if (CountdownTimer.currentTime >= 300)
         {
-            objectSlider.maxValue = 90;
+            //objectSlider.maxValue = 90;
         }
         else if (CountdownTimer.currentTime >= 150)
         {
-            objectSlider.maxValue = 60;
+            objectSlider.maxValue = 90;
         }
         else if (CountdownTimer.currentTime == 0)
         {

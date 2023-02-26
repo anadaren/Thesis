@@ -14,19 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPCname: Donut Man
   dialogueSet1:
-  - aaaa
-  - aaaaaaaa
-  - aaaaaaaaaaa
+  - "Hi. Would you like a donut?\r"
+  - "It\u2019s my job to offer you suits donuts on your breaks.\r"
+  - "I don\u2019t get a break.\r"
+  - Or a donut.
+  - "But that\u2019s okay. I spend all day making them. I don't even like donuts
+    anymore."
   dialogueSet2:
-  - bbbbbb
-  - bbbbbbbb
-  - bbbbbbbbbb
-  - bbbbbbbbbbbbbbbbbbbb
+  - zzz
+  - zzzzzzz
+  - zzzzzzzzzzzzz
+  - OH oh sorry I must have fallen asleep for a second there.
+  - "I don\u2019t get a lot of sleep."
   dialogueSet3:
-  - c
-  - cc
-  - ccc
-  - cccc
+  - Hey, serious question.
+  - "Have you considered that none of this fucking matters?\r"
+  - "No, really, I\u2019m serious.\r"
+  - "What\u2019s the point in working here? I\u2019ll tell you what the point is,
+    so that I can make just enough money so that when I die I\u2019m at least wearing
+    expensive pants.\r\n"
+  - "Meanwhile you guys are over in the office over there.\r"
+  - And you guys walk around all day in your suits and ties and tell other people
+    how stupid they are for caring about anything other than what you guys do while
+    in your suits and ties.
+  - "All our graves are gonna be the same size, brother.\r"
+  - "And I\u2019m getting a little sick of pants myself.\r"
   dialogueSet4:
   - d
   - dd

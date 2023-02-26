@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: SnackGuy
   m_EditorClassIdentifier: 
-  name: Snacky
-  dialogueSet1: []
+  NPCname: Snacky
+  dialogueSet1:
+  - "Aghhhh don\u2019t bother me, I'm on my break."
+  - "Don\u2019t ask me about that timer, it'll finish counting down before my break
+    ends, so not my problem."
+  dialogueSet2:
+  - Not now, I'm on break.
+  dialogueSet3:
+  - Not now, I'm on break.
+  dialogueSet4:
+  - Not now, I'm on break.
   playerDialogue: []

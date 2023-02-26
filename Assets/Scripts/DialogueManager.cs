@@ -89,6 +89,7 @@ public class DialogueManager : MonoBehaviour
 
     void ContinueConversation()
     {
+        npcName.text = npc.name;
         curResponseTracker++;
 
         if (GameManager.currentDialogueSet == 1)

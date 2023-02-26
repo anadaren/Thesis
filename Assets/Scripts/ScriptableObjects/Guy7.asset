@@ -12,15 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Guy7
   m_EditorClassIdentifier: 
-  NPCname: Snarles
+  NPCname: Sleepy
   dialogueSet1:
-  - hmmm
-  - dummmm
+  - Did you hear about that guy on the news?
+  - He got hit by a pie truck.
+  - "That\u2019s really sad.\r"
+  - "Thoughts and prayers thoughts and prayers.\r"
   dialogueSet2:
-  - uh
-  - oh
+  - "Hey, who are you voting for the in the next election?\r"
+  - "I like the guy who removes all the breaks from pie trucks.\r"
+  - "I don\u2019t really agree with everything he says, like the removing of breaks
+    on ALL pie trucks. But he\u2019s got a really good foreign policy though.\r"
+  - Thoughts and prayers thoughts and prayers.
   dialogueSet3:
-  - boo
-  - hoo
-  dialogueSet4: []
+  - "Um.\r"
+  - "So this head just fell in through the window.\r"
+  - "I don\u2019t know where it came from or who\u2019s head it is.\r"
+  - "But it\u2019s a severed head alright."
+  - "I think I\u2019m going to be sick."
+  - Thoughts and prayers thoughts and prayers.
+  dialogueSet4:
+  - "What\u2019s going on out there?"
+  - Are we all going to be heads soon?
   playerDialogue: []

@@ -12,9 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Guy1
   m_EditorClassIdentifier: 
-  name: Grumbo
-  dialogue:
-  - eee
-  - fff
-  - ggg
+  NPCname: 
+  dialogueSet1:
+  - Hey
+  - You didn't hear this from me but I hope our boss dies literally I hate that guy
+    so much.
+  - He's such a dick and I'd rather eat Johnson's casserole than talk to him for
+    too long.
+  - I hate him and his stupid expensive office parties that everyone hates.
+  - But I need this job so whatever I guess.
+  dialogueSet2:
+  - Hey
+  - You didn't hear this from me but I hope our boss dies literally I hate that guy
+    so much.
+  - He's a dick and I'd rather eat Johnson's casserole than talk to him for too long.
+  - I hate him and his stupid expensive office parties that everyone hates.
+  - But I need this job so whatever I guess.
+  dialogueSet3:
+  - Not now, I'm busy.
+  dialogueSet4:
+  - We're all gonna die but I hope our boss dies first.
+  - If we all descend into anarchy do you think anyone would notice if I strangled
+    him with my tie?
   playerDialogue: []

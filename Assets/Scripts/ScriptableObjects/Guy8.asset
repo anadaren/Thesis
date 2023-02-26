@@ -12,6 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Guy8
   m_EditorClassIdentifier: 
-  name: Richards
-  dialogueSet1: []
+  NPCname: Johnson
+  dialogueSet1:
+  - "New product reviews are in:\r"
+  - "\u201CWorks great!\u201D\r\n\u201CIt kind of sucks but it\u2019s fine I guess.\u201D\r\n\u201CMy
+    daughter loves it!\u201D\r\n\u201CPlease help god please help us oh my god we
+    are dying stop writing this down and help us.\u201D\r\n"
+  - "We\u2019re going to send a gift basket to that last person, and add a banner
+    to our website to show solidarity."
+  - "Also set a reminder to block them from further product reviews, when you get
+    the chance.\r"
+  dialogueSet2:
+  - Not now, I'm busy.
+  dialogueSet3:
+  - Not now, I'm busy.
+  dialogueSet4:
+  - Not now, I'm busy.
   playerDialogue: []

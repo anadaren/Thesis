@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Guy3
   m_EditorClassIdentifier: 
-  name: Jolly
-  dialogueSet1: []
+  NPCname: Jerry
+  dialogueSet1:
+  - I'm the button supervisor.
+  - I watch the button. It's what I do.
+  - It's a very important job.
+  dialogueSet2:
+  - Don't care, just press the button.
+  dialogueSet3:
+  - Don't care, just press the button.
+  dialogueSet4:
+  - Still don't care, just press the button.
   playerDialogue: []
