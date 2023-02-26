@@ -15,15 +15,22 @@ MonoBehaviour:
   NPCname: Johnson
   dialogueSet1:
   - "New product reviews are in:\r"
-  - "\u201CWorks great!\u201D\r\n\u201CIt kind of sucks but it\u2019s fine I guess.\u201D\r\n\u201CMy
-    daughter loves it!\u201D\r\n\u201CPlease help god please help us oh my god we
-    are dying stop writing this down and help us.\u201D\r\n"
+  - "\u201CWorks great!\u201D\r"
+  - "\u201CIt kind of sucks but it\u2019s fine I guess.\u201D\r\n"
+  - "\u201CMy daughter loves it!\u201D\r"
+  - "\u201CPlease help god please help us oh my god we are dying stop writing this
+    down and help us.\u201D\r"
   - "We\u2019re going to send a gift basket to that last person, and add a banner
     to our website to show solidarity."
   - "Also set a reminder to block them from further product reviews, when you get
     the chance.\r"
   dialogueSet2:
-  - Not now, I'm busy.
+  - Our stock is up three points!
+  - "Oops, now it\u2019s down four.\r"
+  - "Back up again! Seven!\r"
+  - Oop, back down by fifteen.
+  - Wait, now I'm looking at the wrong thing. We don't even make shoes!
+  - Oh--this just in, we now make shoes!
   dialogueSet3:
   - Not now, I'm busy.
   dialogueSet4:

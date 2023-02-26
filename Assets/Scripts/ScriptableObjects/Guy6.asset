@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPCname: Tom
   dialogueSet1:
-  - "That\u2019s what they want you to think, man. I\u2019m telling you, when that
-    thing reaches zero, poof, we\u2019re all gonna be in a lab where they start poking
-    us with big metal sticks until we keel over.\r"
+  - "That\u2019s what they want you to think, man."
+  - "I\u2019m telling you, when that thing reaches zero, poof, we\u2019re all gonna
+    be in a lab where they start poking us with big metal sticks until we keel over.\r"
   - "Doesn\u2019t look like it\u2019s working. Any other ideas?\r"
   dialogueSet2:
   - "I don\u2019t like the way that things looking at me\u2026"

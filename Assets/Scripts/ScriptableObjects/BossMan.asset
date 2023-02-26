@@ -21,8 +21,8 @@ MonoBehaviour:
     expensive office parties.\r"
   dialogueSet2:
   - "I\u2019d like to give a shoutout to the boys for bringing in that new TV into
-    the break room. I figured it was good for morale so I let them keep it. Just
-    something cool bosses like me like to do.\r"
+    the break room. I figured it was good for morale so I let them keep it."
+  - Just a cool thing cool bosses like me like to do!
   dialogueSet3:
   - "Good news! Sales are up 20% and thoughts and prayers up 30%!\r"
   - "Also, sorry, we\u2019re taking away the TV in the break room.\r"
@@ -35,10 +35,8 @@ MonoBehaviour:
     all of next week.\r"
   - "What? No I\u2019m not going to get away from you all. I\u2019ll have you know
     it\u2019s my daughter\u2019s cousin\u2019s grandma\u2019s grandson\u2019s dad\u2019s
-    divorce-versary party! I can\u2019t just miss it!\r"
-  - "What? No I\u2019m not going to get away from you all. I\u2019ll have you know
-    it\u2019s my daughter\u2019s cousin\u2019s grandma\u2019s grandson\u2019s dad\u2019s
-    divorce-versary party! I can\u2019t just miss it!\r"
+    divorce-versary party!"
+  - "I can\u2019t just miss it!\r"
   - "But don\u2019t worry, you can email me if you need anything, I\u2019ll respond
     right within the next two weeks for sure!"
   - "And I\u2019ll be sending my thoughts and prayers for anyyyyything that may or

@@ -18,9 +18,13 @@ MonoBehaviour:
   - I watch the button. It's what I do.
   - It's a very important job.
   dialogueSet2:
-  - Don't care, just press the button.
+  - "It feels like you don\u2019t see the importance of pressing the button.\r"
+  - "Well, trust me, it\u2019s the glue that holds this whole operation together.\r"
+  - "You may not see it, but it sets off a huge chain reaction that keeps this whole
+    place afloat.\r"
+  - "Respect the button.\r"
   dialogueSet3:
   - Don't care, just press the button.
   dialogueSet4:
-  - Still don't care, just press the button.
+  - I don't care what happens. Just press the button.
   playerDialogue: []

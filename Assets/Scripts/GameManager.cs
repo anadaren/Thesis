@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject headUI;
     public GameObject wallWriting;
+    public GameObject wallWriting2;
 
     public AudioSource ticking;
     public AudioClip endingSound;
@@ -53,8 +54,8 @@ public class GameManager : MonoBehaviour
         currentDialogueSet = 2;
 
         // Switched sky color
-        float t = Mathf.PingPong(Time.time, 5) / 5;
-        cam.backgroundColor = Color.Lerp(color1, color2, t);
+        //float t = Mathf.PingPong(Time.time, 5) / 5;
+        cam.backgroundColor = Color.Lerp(color1, color2, 5);
     }
 
     public void eventThree()
@@ -82,7 +83,7 @@ public class GameManager : MonoBehaviour
             child.GetComponent<MeshRenderer>().material = Material1;
         }
 
-        
+        wallWriting2.SetActive(true);
 
         // Disables donut man
         donutGuy.SetActive(false);
@@ -116,6 +117,7 @@ public class GameManager : MonoBehaviour
         GameObject bigBoss = Instantiate(bigGuy, new Vector3(0,2,-60), Quaternion.Euler(new Vector3(0,90,0)));
         outside.SetActive(true);
         wallWriting.SetActive(false);
+        wallWriting2.SetActive(false);
         office.GetComponent<Animator>().Play("OfficeAnim");
     }
 

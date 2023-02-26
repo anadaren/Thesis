@@ -29,9 +29,10 @@ MonoBehaviour:
   - "So this head just fell in through the window.\r"
   - "I don\u2019t know where it came from or who\u2019s head it is.\r"
   - "But it\u2019s a severed head alright."
-  - "I think I\u2019m going to be sick."
+  - "That's so gruesome. I think I\u2019m going to be sick."
   - Thoughts and prayers thoughts and prayers.
   dialogueSet4:
   - "What\u2019s going on out there?"
   - Are we all going to be heads soon?
+  - Ughhhh I don't want to think about it.....
   playerDialogue: []
