@@ -63,11 +63,15 @@ public class DialogueManager : MonoBehaviour
     void StartConversation()
     {
         isTalking = true;
-        //play talking sound
+        //plays talking sound
         talking.Play();
-        //play talking animation
+        //plays talking animation
         anim.Play(talkAnimText);
+
+        //sets response to first in index
         curResponseTracker = 0;
+
+        // Sets dialogue UI to active
         dialogueUI.SetActive(true);
         npcName.text = npc.name;
 
@@ -143,9 +147,9 @@ public class DialogueManager : MonoBehaviour
     void EndConversation()
     {
         isTalking = false;
-        //STOP talking sound
+        //STOPS talking sound
         talking.Stop();
-        //STOP talking animation
+        //STOPS talking animation
         anim.Play(baseAnimText);
         dialogueUI.SetActive(false);
     }
