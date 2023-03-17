@@ -12,51 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Guy5
   m_EditorClassIdentifier: 
-  NPCname: 'Jambles '
+  NPCname: Johnson
   dialogueSet1:
-  - Hello!
-  - Welcome to your new job at [Insert Company Here].
-  - We hope you enjoy your stay, and unlimited PTO!
-  - "What\u2019s that? Timer? What timer? I don\u2019t see a timer."
-  - "You have a lot of work to do. So I recommend you put those kinds of thoughts
-    out of your head while you\u2019re on company time."
-  - And send any timer related complaints to HR.
-  - "No, we don\u2019t have anyone in HR here right now, why do you ask?\r"
-  - "Anyway,  if you need anything, I\u2019ll be right here.\r"
-  - Literally.
-  - "New company policy states all new hires need their computer continually monitored
-    24/7 by a senior worker.\r"
-  - "So I\u2019ll be seeing you, then! Always."
+  - "New product reviews are in:\r"
+  - "\u201CWorks great!\u201D\r"
+  - "\u201CIt kind of sucks but it\u2019s fine I guess.\u201D\r\n"
+  - "\u201CMy daughter loves it!\u201D\r"
+  - "\u201CPlease help god please help us oh my god we are dying stop writing this
+    down and help us.\u201D\r"
+  - "We\u2019re going to send a gift basket to that last person, and add a banner
+    to our website to show solidarity."
+  - "Also set a reminder to block them from further product reviews, when you get
+    the chance.\r"
   dialogueSet2:
-  - "How\u2019s work going?"
-  - "Just kidding, I already know.\r"
-  - "Your productivity is a little bit down from the average\u2026\r"
-  - "I\u2019d keep an eye on it, you don\u2019t want to get in trouble with the boss.\r"
-  - "Have you visited his office in the back yet?\r"
-  - "I\u2019d say hi\u2026you don\u2019t want to be a stranger when quarterly reviews
-    come back.\r"
-  - "That\u2019s way more important than anything about that timer that you keep
-    looking at.\r"
-  - "That still doesn\u2019t exist.\r"
-  - Back to work for you then!
+  - Our stock is up three points!
+  - "Oops, now it\u2019s down four.\r"
+  - "Back up again! Seven!\r"
+  - Oop, back down by fifteen.
+  - Wait, now I'm looking at the wrong thing. We don't even make shoes!
+  - Oh--this just in, we now make shoes!
   dialogueSet3:
-  - "You may notice some small changes throughout the office, but don't worry. They
-    won\u2019t affect your productivity.\r"
-  - "But you wasting time talking to me will.\r"
-  - "Your tasks are starting to pile up, you should do something about that.\r"
-  - "Your tasks are starting to pile up, you should do something about that.\r"
-  - "And ignore anything that may or may not come flying through the windows. That\u2019ll
-    only distract you from your work."
-  - Those are problems for out there, and you need to be focused on the problems
-    in here.
+  - Not now, I'm busy.
   dialogueSet4:
-  - "Small power outage, nothing to worry about. Won\u2019t affect productivity.\r"
-  - "And I thought I told you to stop looking at that timer.\r"
-  - "The one that doesn\u2019t exist, that is."
-  - "Nothing will happen when it reaches zero.\r"
-  - "But you need to get back to work before I write you up!\r"
-  - "Your shift is nearly over. If there\u2019s anything you want to do I suggest
-    you get to it soon.\r\n"
-  - "I know you have a lot of things on your mind, but I promise nothing could matter
-    more than the work you are doing here today.\r"
+  - Not now, I'm busy.
   playerDialogue: []

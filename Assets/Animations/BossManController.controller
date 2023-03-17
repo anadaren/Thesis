@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c0aec352d46103145bdd63d8aa8872d9, type: 2}
+  m_Motion: {fileID: 7400000, guid: caeb853013545ea4e9cd65216fe2db00, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -68,7 +68,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ebf38c1dc3f294345a7d5b3fe4a42740, type: 2}
+  m_Motion: {fileID: 7400000, guid: 06d320477cfb1654d83ace45c8148ab1, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -88,10 +88,10 @@ AnimatorStateMachine:
     m_Position: {x: 100, y: 30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6789545336852327938}
-    m_Position: {x: 350, y: 30, z: 0}
+    m_Position: {x: 320, y: 70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5542235507115002561}
-    m_Position: {x: 290, y: 130, z: 0}
+    m_Position: {x: 320, y: 190, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -109,7 +109,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BossIdle2
+  m_Name: Panic
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -122,7 +122,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d0070bf8c9f7af44090983d43415abde, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6dcbc28600e94484a9405f8777a60e05, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

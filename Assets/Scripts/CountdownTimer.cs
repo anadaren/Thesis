@@ -27,39 +27,11 @@ public class CountdownTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        // Displays Time
+        // Checks if ending has been reached   
         if (currentTime >= 0)
         {
             currentTime -= Time.deltaTime;
-
-            //Triggers events at different times
-            if (currentTime <= 450 && currentTime > 300)
-            {
-                gameStage = 2;
-                
-                if(twoReached == false)
-                {
-                    events.eventTwo();
-                    twoReached = true;
-                }
-            } else if(currentTime <= 300 && currentTime > 150)
-            {
-                gameStage = 3;
-                if (threeReached == false)
-                {
-                    events.eventThree();
-                    threeReached = true;
-                }
-            } else if(currentTime <= 150)
-            {
-                gameStage = 4;
-                if (fourReached == false)
-                {
-                    events.eventFour();
-                    fourReached = true;
-                }
-            }
+            checkStage();
         }
         else
         {
@@ -67,17 +39,53 @@ public class CountdownTimer : MonoBehaviour
             endReached = true;
         }
 
-        if(currentTime <= 0 && endReached == false)
+        if (currentTime <= 0 && endReached == false)
         {
 
             //play ending cutscene
             events.endingScene();
             endReached = true;
         }
-
+        
+        // Displays Time on big timer
         DisplayTime(currentTime);
 
-        
+
+
+    }
+
+    void checkStage()
+    {
+        //Checks which of the four stages the game is in
+        //Triggers events at different times
+        if (currentTime <= 450 && currentTime > 300)
+        {
+            gameStage = 2;
+
+            if (twoReached == false)
+            {
+                events.eventTwo();
+                twoReached = true;
+            }
+        }
+        else if (currentTime <= 300 && currentTime > 150)
+        {
+            gameStage = 3;
+            if (threeReached == false)
+            {
+                events.eventThree();
+                threeReached = true;
+            }
+        }
+        else if (currentTime <= 150)
+        {
+            gameStage = 4;
+            if (fourReached == false)
+            {
+                events.eventFour();
+                fourReached = true;
+            }
+        }
     }
 
     void DisplayTime(float timeToDisplay)

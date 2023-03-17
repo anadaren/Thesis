@@ -16,34 +16,11 @@ public class TaskInteraction : MonoBehaviour
     public AudioSource siren;
 
 
-    //public float timeCounter;
-
-
-
-    /*public float gameTime;
-    
-    private bool stopTimer;
-
-
-
-    public Text buttonText;
-    public float buttonNumber;
-
-    // Task-Specific Variables
-    private Animator anim;
-    public string animName;
-    public GameObject spawnObj;*/
-
-
     // Start is called before the first frame update
     void Start()
     {
         objectSlider.maxValue = 120;
         objectSlider.value = objectSlider.maxValue;
-        //timeCounter = 60;
-            //stopTimer = false;
-        //objectSlider.maxValue = gameTime;
-        //objectSlider.value = gameTime;
     }
 
     void Update()
@@ -66,10 +43,10 @@ public class TaskInteraction : MonoBehaviour
             // sirens stop
             siren.Stop();
         }
-
+        // Displays slider value
         objectSlider.value -= Time.deltaTime;
 
-
+        // If time is running out play siren
         if (objectSlider.value < 5 && !siren.isPlaying)
         {
             siren.Play();
@@ -78,18 +55,6 @@ public class TaskInteraction : MonoBehaviour
             siren.Stop();
         }
 
-        //taskCheck();
-
-        /*float time = gameTime - Time.time;
-
-        int minutes = Mathf.FloorToInt(time / 60);
-        int seconds = Mathf.FloorToInt(time - minutes * 60f);
-
-        if(time <= 0)
-        {
-            stopTimer = true;
-        
-        }*/
     }
 
     // Update is called once per frame

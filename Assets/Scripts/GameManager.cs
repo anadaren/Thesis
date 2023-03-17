@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject outside;
     public GameObject donutGuy;
     public GameObject donutCanvas;
+    public Animator bossManAnim;
 
     public GameObject headUI;
     public GameObject wallWriting;
@@ -76,18 +77,22 @@ public class GameManager : MonoBehaviour
         // Switches Dialogue to Set 4
         currentDialogueSet = 4;
 
-        //switch office materials
+        // Switches office materials to dark mode
         for (int i = 0; i < 9; i++)
         {
             GameObject child = office.transform.GetChild(i).gameObject;
             child.GetComponent<MeshRenderer>().material = Material1;
         }
 
+        // Wall Writing
         wallWriting2.SetActive(true);
 
         // Disables donut man
         donutGuy.SetActive(false);
         donutCanvas.SetActive(true);
+
+        // Switches BossMan animation
+        bossManAnim.Play("Panic");
 
         // Stops music
         music.Stop();
@@ -95,6 +100,7 @@ public class GameManager : MonoBehaviour
 
     public void endingScene()
     {
+
         // Sets off end cutscene
         StartCoroutine(pauseForEffect());
         
