@@ -14,13 +14,17 @@ public class GameManager : MonoBehaviour
     public Animator bossManAnim;
 
     public GameObject headUI;
+    public GameObject tv;
     public GameObject wallWriting;
     public GameObject wallWriting2;
+    public GameObject wallWriting3;
+    public GameObject wallWriting4;
+    public GameObject wallStuff;
 
+    // Non-Npc Sounds
     public AudioSource ticking;
-    public AudioClip endingSound;
-
     public AudioSource music;
+    public AudioClip endingSound;
 
     // Changing Office Materials
     public Material Material1;
@@ -32,9 +36,6 @@ public class GameManager : MonoBehaviour
     public Camera cam;
     public Color color1;
     public Color color2;
-
-
-    public 
 
 
     // Start is called before the first frame update
@@ -57,6 +58,9 @@ public class GameManager : MonoBehaviour
         // Switched sky color
         //float t = Mathf.PingPong(Time.time, 5) / 5;
         cam.backgroundColor = Color.Lerp(color1, color2, 5);
+
+        // Sets TV to active
+        tv.SetActive(true);
     }
 
     public void eventThree()
@@ -67,6 +71,10 @@ public class GameManager : MonoBehaviour
         // Head
         GameObject fallingHead = Instantiate(head, new Vector3(-17, -10, -5), Quaternion.Euler(new Vector3(0, 0, 90)));
         headUI.SetActive(true);
+
+        // Takes TV away
+        tv.SetActive(false);
+
 
         // Wall Writing
         wallWriting.SetActive(true);
@@ -86,6 +94,7 @@ public class GameManager : MonoBehaviour
 
         // Wall Writing
         wallWriting2.SetActive(true);
+        wallWriting3.SetActive(true);
 
         // Disables donut man
         donutGuy.SetActive(false);
@@ -100,6 +109,9 @@ public class GameManager : MonoBehaviour
 
     public void endingScene()
     {
+
+        // Wall Writing
+        wallWriting4.SetActive(true);
 
         // Sets off end cutscene
         StartCoroutine(pauseForEffect());
@@ -122,8 +134,7 @@ public class GameManager : MonoBehaviour
         //Spawns big guy and animates office walls
         GameObject bigBoss = Instantiate(bigGuy, new Vector3(0,2,-60), Quaternion.Euler(new Vector3(0,90,0)));
         outside.SetActive(true);
-        wallWriting.SetActive(false);
-        wallWriting2.SetActive(false);
+        wallStuff.SetActive(false);
         office.GetComponent<Animator>().Play("OfficeAnim");
     }
 

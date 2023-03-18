@@ -15,6 +15,7 @@ public class TaskInteraction : MonoBehaviour
 
     public AudioSource siren;
 
+    private bool isSirenPlaying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,36 +26,72 @@ public class TaskInteraction : MonoBehaviour
 
     void Update()
     {
+        float currentTime = CountdownTimer.currentTime;
+
         // max amount of time on slider goes down as time goes down
-        if (CountdownTimer.currentTime >= 450)
+        if (currentTime >= 450)
         {
             objectSlider.maxValue = 120;
         }
-        else if (CountdownTimer.currentTime >= 300)
+        else if (currentTime >= 300)
         {
             //objectSlider.maxValue = 90;
         }
-        else if (CountdownTimer.currentTime >= 150)
+        else if (currentTime >= 150)
         {
             objectSlider.maxValue = 90;
         }
-        else if (CountdownTimer.currentTime == 0)
+        else if (currentTime == 0)
         {
-            // sirens stop
-            siren.Stop();
+            StopSiren();
         }
+
         // Displays slider value
         objectSlider.value -= Time.deltaTime;
 
         // If time is running out play siren
-        if (objectSlider.value < 5 && !siren.isPlaying)
+        if (objectSlider.value < 5 && !isSirenPlaying)
         {
-            siren.Play();
-        } else if (objectSlider.value > 5 && siren.isPlaying)
+            PlaySiren();
+        }
+        else if (objectSlider.value > 5 && isSirenPlaying)
         {
-            siren.Stop();
+            StopSiren();
         }
 
+
+        /*if (!isSirenPlaying)
+        {
+            StartCoroutine(DecreaseSliderValue());
+        }
+    }
+
+    IEnumerator DecreaseSliderValue()
+    {
+        yield return new WaitForEndOfFrame();
+        objectSlider.value -= Time.deltaTime;
+
+        // If time is running out play siren
+        if (objectSlider.value < 5 && !isSirenPlaying)
+        {
+            PlaySiren();
+        }
+        else if (objectSlider.value > 5 && isSirenPlaying)
+        {
+            StopSiren();
+        }*/
+    }
+
+    void PlaySiren()
+    {
+        siren.Play();
+        isSirenPlaying = true;
+    }
+
+    void StopSiren()
+    {
+        siren.Stop();
+        isSirenPlaying = false;
     }
 
     // Update is called once per frame
@@ -63,67 +100,55 @@ public class TaskInteraction : MonoBehaviour
         distance = Vector3.Distance(player.transform.position, this.transform.position);
         if (distance <= 6f)
         {
-            if (objectName == "Messages")
+            switch (objectName)
             {
-                CheckMessages();
-            } else if(objectName == "Button")
-            {
-                ButtonPress();
-            } else if(objectName == "Plant")
-            {
-                WaterPlants();
-            } else if(objectName == "Printer")
-            {
-                FixPrinter();
-            } else if(objectName == "Files")
-            {
-                FilePapers();
-            } else if(objectName == "Coffee")
-            {
-                GetCoffee();
-            } else if(objectName == "Mailbox")
-            {
-                GetMail();
+                case "Messages":
+                    CheckMessages();
+                    break;
+                case "Button":
+                    ButtonPress();
+                    break;
+                case "Plant":
+                    WaterPlants();
+                    break;
+                case "Printer":
+                    FixPrinter();
+                    break;
+                case "Files":
+                    FilePapers();
+                    break;
+                case "Coffee":
+                    GetCoffee();
+                    break;
+                case "Mailbox":
+                    GetMail();
+                    break;
             }
         }
     }
 
     public void CheckMessages()
     {
-        //if(objectSlider.value <= 0)
-        //{
-        //    siren.Play();
-        //}
         objectSlider.value = objectSlider.maxValue;
     }
 
     void ButtonPress()
     {
-        //anim.Play(animName);
         objectSlider.value = objectSlider.maxValue;
     }
 
     void WaterPlants()
     {
-        //anim.Play(animName);
-
-        //waterMeter++;
-        //if (waterMeter <= 0)
-        // {
-
-        // }
         objectSlider.value = objectSlider.maxValue;
     }
 
     void FixPrinter()
     {
-        //anim.Play(animName);
         objectSlider.value = objectSlider.maxValue;
     }
 
     void FilePapers()
     {
-        //anim.Play(animName);
         objectSlider.value = objectSlider.maxValue;
     }
 
