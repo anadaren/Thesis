@@ -3490,6 +3490,51 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 644326656}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1471290030367418809}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: dialogueCheck
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375565, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: m_Enabled

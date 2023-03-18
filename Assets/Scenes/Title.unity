@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1870,16 +1870,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Something''s Coming is an interactive VR experience satirizing the concept
-    of having to deal with office culture amist ongoing crisis.
+  m_text: 'Something''s Coming is an interactive VR experience. It satirizes the
+    concept of having to deal with petty office culture while in the middle of ongoing
+    crises.
 
 
-    This project
-    is not about offices.
+    This project is not about offices.
 
 
-    It is also my MS Master''s Thesis Project, and you
-    can read more about my dev process at anastasiagreen.com/Somethings-Coming
+    It is also my IDM Master''s
+    Thesis Project, and you can read more about my dev process at anastasiagreen.com/Somethings-Coming
 
 '
   m_isRightToLeft: 0
