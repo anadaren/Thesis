@@ -10,18 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
-  m_Name: SnackGuy
+  m_Name: Snacky
   m_EditorClassIdentifier: 
-  NPCname: Snacky
+  NPC_name: Snacky
   dialogueSet1:
   - "Aghhhh don\u2019t bother me, I'm on my break."
   - "Don\u2019t ask me about that timer, it'll finish counting down before my break
     ends, so not my problem."
   dialogueSet2:
   - Not now, I'm on break.
+  - I work 27 hours a day, I should get an uninterrupted break.
   dialogueSet3:
-  - Mannnnn that severed head is none of my business. I'm on break.
+  - Mannnnn that severed head over there is none of my business. I'm on break.
+  - "You think that\u2019s bad? That\u2019s nothing. I\u2019ve had this job for 71
+    years, I\u2019ve seen some things."
+  - "Just wait until you hear about the arm of \u201891, now THAT was gruesome."
+  - Sometimes heads just fly through windows, nothing worth interrupting my break
+    about.
+  - "It\u2019ll all blow over by tomorrow."
   dialogueSet4:
   - Now that power's out?? Jeeeeez what's a guy gotta do to get a decent break around
     here.
+  - "I told you, I don\u2019t care about any stupid timer, I\u2019m on break.\r"
+  - "That\u2019s the last thing I\u2019ll say about it. If I die at least it\u2019ll
+    be on my break."
   playerDialogue: []

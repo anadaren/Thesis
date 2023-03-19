@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
-  m_Name: Guy2
+  m_Name: Tom
   m_EditorClassIdentifier: 
-  NPCname: Tim
+  NPC_name: Tom
   dialogueSet1:
   - "I think you\u2019re full of fudge. Nothing\u2019s gonna happen when the timer
     reaches zero.\r"

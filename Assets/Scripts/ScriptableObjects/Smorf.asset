@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
-  m_Name: Guy7
+  m_Name: Smorf
   m_EditorClassIdentifier: 
-  NPCname: Sleepy
+  NPC_name: Smorf
   dialogueSet1:
   - Did you hear about that guy on the news?
   - He got hit by a pie truck.
@@ -22,17 +22,21 @@ MonoBehaviour:
   - "Hey, who are you voting for the in the next election?\r"
   - "I like the guy who removes all the breaks from pie trucks.\r"
   - "I don\u2019t really agree with everything he says, like the removing of breaks
-    on ALL pie trucks. But he\u2019s got a really good foreign policy though.\r"
+    on ALL pie trucks."
+  - "But he\u2019s got a really good foreign policy though.\r"
   - Thoughts and prayers thoughts and prayers.
   dialogueSet3:
   - "Um.\r"
   - "So this head just fell in through the window.\r"
-  - "I don\u2019t know where it came from or who\u2019s head it is.\r"
+  - "I don\u2019t know where it came from, or who\u2019s head it is or anything..."
   - "But it\u2019s a severed head alright."
-  - "That's so gruesome. I think I\u2019m going to be sick."
+  - "We need to reinforce our windows, this kind of thing can\u2019t just happen!"
+  - The whole office is going to be way too distracted to get anything done now!
+  - "Thanks a lot, whoever threw this\u2026."
   - Thoughts and prayers thoughts and prayers.
   dialogueSet4:
   - "What\u2019s going on out there?"
   - Are we all going to be heads soon?
-  - Ughhhh I don't want to think about it.....
+  - "Ughhhh I don't want to think about it. There\u2019s no way I\u2019m going to
+    get everything done today\u2026."
   playerDialogue: []

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
-  m_Name: Guy6
+  m_Name: Tim
   m_EditorClassIdentifier: 
-  NPCname: Tom
+  NPC_name: Tim
   dialogueSet1:
   - "That\u2019s what they want you to think, man."
   - "I\u2019m telling you, when that thing reaches zero, poof, we\u2019re all gonna

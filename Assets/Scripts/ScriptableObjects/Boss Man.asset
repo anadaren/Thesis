@@ -10,21 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
-  m_Name: BossMan
+  m_Name: Boss Man
   m_EditorClassIdentifier: 
-  NPCname: Boss Man
+  NPC_name: Boss Man
   dialogueSet1:
   - Hello! You must be our new hire.
   - "I\u2019m your boss, as I\u2019m sure you\u2019ve guess from my huge office here.\r"
   - "But don\u2019t think of me like your boss, I\u2019m your friend!\r"
-  - "I get along with all the guys here. They love it when I throw very cool very
+  - "I get along with all the guys here. They love it when I throw very cool, very
     expensive office parties.\r"
+  - Make yourself at home!
+  - "At your desk! While you\u2019re working!"
   dialogueSet2:
-  - "I\u2019d like to give a shoutout to the boys for bringing in that new TV into
-    the break room. I figured it was good for morale so I let them keep it."
-  - Just a cool thing cool bosses like me like to do!
+  - "I\u2019d like to give a shout out to the boys for bringing in that new TV into
+    the break room."
+  - I figured it was good for morale so I let them keep it.
+  - "Just something cool bosses like me like to do. A reward for everyone\u2019s
+    hard work!"
   dialogueSet3:
-  - "Good news! Sales are up 20% and thoughts and prayers up 30%!\r"
+  - "Good news! Sales are up 20% and thoughts and prayers down 30%!\r"
   - "Also, sorry, we\u2019re taking away the TV in the break room.\r"
   - The donut worker could kind of see it from his station, and it was really tanking
     his productivity.

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
+  m_Name: Walter
+  m_EditorClassIdentifier: 
+  NPC_name: Walter
+  dialogueSet1:
+  - "You know, I think the timer is a message.\r"
+  - "I know we\u2019re not supposed to talk about it, but whatever, I\u2019m kind
+    of a rebel."
+  - "Anyway, I think it\u2019s a sign that we all need to stop all of what\u2019s
+    happening in the world."
+  - We have to return to our divine energies and go back to worshiping nature, the
+    way humans are supposed to.
+  - "That\u2019s all we have to do!"
+  - "Anyway that\u2019s why I\u2019m not vaccinated."
+  dialogueSet2:
+  - You know, I really do love working here. Spreadsheets get me into the creative
+    flow.
+  - "Reminds me of when I went backpacking through Canada last year.\r"
+  - I got really in touch with my inner self. Especially when all the locals threw
+    things at me and told me to leave.
+  - I love seeing how different people live.
+  - I guess you could say I had a spiritual awakening or something.
+  - "I feel so much more enlightened since I got back. I\u2019m so much better at
+    spreadsheets now you would not believe."
+  dialogueSet3:
+  - I saw the severed head that fell through the window.
+  - "Ugh, I feel so overwhelmed with everything that\u2019s happening. I need a meditation
+    break."
+  - ...
+  - ...
+  - Wow. I feel so much better now. You should try doing that
+  - You'll forget all about that head and that silly old timer.
+  - Namaste, bud.
+  dialogueSet4:
+  - "You know, I\u2019m not scared of the timer. It\u2019s just a big clock, I don\u2019t
+    see what the big deal is."
+  - As long as we're all in touch with our inner selves everything will be just fine.
+  - "I was at my yoga studio last weekend and Bethany told me that we could solve
+    all the world\u2019s problems if only we could get our own internal conflicts
+    resolved.\r"
+  - "I think she was onto something with that. Maybe the real timer is just in our
+    minds. And in my mind, it\u2019s harmless, so I\u2019m not worried.\r"
+  - Annnnnd if we do all die, maybe it was just our time, you know?
+  - Maybe the earth needs a good cleansing!
+  playerDialogue: []

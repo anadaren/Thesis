@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
   m_Name: Jambles
   m_EditorClassIdentifier: 
-  NPCname: 'Jambles '
+  NPC_name: Jambles
   dialogueSet1:
   - Hello!
   - Welcome to your new job at [Insert Company Here].

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
-  m_Name: Guy1
+  m_Name: Bingo
   m_EditorClassIdentifier: 
-  NPCname: 
+  NPC_name: Bingo
   dialogueSet1:
   - Hey
   - You didn't hear this from me but I hope our boss dies literally I hate that guy
@@ -34,4 +34,6 @@ MonoBehaviour:
   - We're all gonna die but I hope our boss dies first.
   - If we all descend into anarchy do you think anyone would notice if I strangled
     him with my tie?
+  - "Don\u2019t answer that. I\u2019m gonna do it anyway.\r"
+  - Ask not for whom the bell tolls, it tolls for thee, bitch!
   playerDialogue: []

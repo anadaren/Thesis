@@ -4594,7 +4594,7 @@ PrefabInstance:
     - target: {fileID: 3635976613606140480, guid: 5e0b6d2e0a2183a458e6a6013ea0c8ad,
         type: 3}
       propertyPath: m_Text
-      value: Stompy
+      value: Walter
       objectReference: {fileID: 0}
     - target: {fileID: 3635976613639199699, guid: 5e0b6d2e0a2183a458e6a6013ea0c8ad,
         type: 3}
@@ -7911,7 +7911,7 @@ PrefabInstance:
     - target: {fileID: 3635976613606140480, guid: 5e0b6d2e0a2183a458e6a6013ea0c8ad,
         type: 3}
       propertyPath: m_Text
-      value: Tingle
+      value: Bingo
       objectReference: {fileID: 0}
     - target: {fileID: 3635976613639199699, guid: 5e0b6d2e0a2183a458e6a6013ea0c8ad,
         type: 3}
@@ -8130,7 +8130,7 @@ PrefabInstance:
     - target: {fileID: 3635976613606140480, guid: 5e0b6d2e0a2183a458e6a6013ea0c8ad,
         type: 3}
       propertyPath: m_Text
-      value: Doug
+      value: Jimbls
       objectReference: {fileID: 0}
     - target: {fileID: 3635976613639199699, guid: 5e0b6d2e0a2183a458e6a6013ea0c8ad,
         type: 3}
@@ -13195,7 +13195,7 @@ PrefabInstance:
     - target: {fileID: 3635976613606140480, guid: 5e0b6d2e0a2183a458e6a6013ea0c8ad,
         type: 3}
       propertyPath: m_Text
-      value: Doodle
+      value: Johnson
       objectReference: {fileID: 0}
     - target: {fileID: 3635976613639199699, guid: 5e0b6d2e0a2183a458e6a6013ea0c8ad,
         type: 3}

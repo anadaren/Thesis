@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c83e02f32e8aa540956205bc54eeb0d, type: 3}
+  m_Name: Donut Man
+  m_EditorClassIdentifier: 
+  NPC_name: DonutMan
+  dialogueSet1:
+  - "Hi. Would you like a donut?\r"
+  - "It\u2019s my job to offer you Suits donuts on your breaks.\r"
+  - "I don\u2019t get a break.\r"
+  - Or a donut.
+  - "But that\u2019s okay. I spend all day making them. I don't even like donuts
+    anymore."
+  dialogueSet2:
+  - zzz
+  - zzzzzzz
+  - zzzzzzzzzzzzz
+  - OH oh sorry I must have fallen asleep for a second there.
+  - "I don\u2019t get a lot of sleep."
+  - Mostly just working.
+  - "I\u2019m saving up to move to a state where I have rights."
+  - Keep getting farther away though.
+  - "Anyway we sell bear claws now. They\u2019re pretty good, if you want to try
+    one."
+  dialogueSet3:
+  - Hey, serious question.
+  - Have you ever thought about what happens when the timer runs out?
+  - No, you guys never do.
+  - "I wouldn\u2019t expect you to."
+  - "But I do. When that thing reaches zero we\u2019re all going down."
+  - "Oh except BossMan over there, he\u2019s headed to Mars."
+  - "Not like there\u2019s anything that can hurt you up there."
+  - Selling donuts at a time like this, I must be a real idiot!
+  - "But oh well. Wouldn\u2019t know what else to do anyway."
+  - "At least the rich man\u2019s grave is gonna be the same size as mine, brother."
+  - Also I heard you guys found a severed head in the office wtf is that about???
+  dialogueSet4:
+  - d
+  - dd
+  - ddd
+  - ddddd
+  playerDialogue: []
