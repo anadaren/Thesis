@@ -29,17 +29,20 @@ public class TaskInteraction : MonoBehaviour
         float currentTime = CountdownTimer.currentTime;
 
         // max amount of time on slider goes down as time goes down
-        if (currentTime >= 450)
+        if(currentTime >= 0)
         {
-            objectSlider.maxValue = 120;
-        }
-        else if (currentTime >= 300)
-        {
-            //objectSlider.maxValue = 90;
-        }
-        else if (currentTime >= 150)
-        {
-            objectSlider.maxValue = 90;
+            if (currentTime >= 450)
+            {
+                objectSlider.maxValue = 180;
+            }
+            else if (currentTime >= 300)
+            {
+                objectSlider.maxValue = 150;
+            }
+            else if (currentTime >= 150)
+            {
+                objectSlider.maxValue = 120;
+            }
         }
         else if (currentTime == 0)
         {
@@ -59,27 +62,6 @@ public class TaskInteraction : MonoBehaviour
             StopSiren();
         }
 
-
-        /*if (!isSirenPlaying)
-        {
-            StartCoroutine(DecreaseSliderValue());
-        }
-    }
-
-    IEnumerator DecreaseSliderValue()
-    {
-        yield return new WaitForEndOfFrame();
-        objectSlider.value -= Time.deltaTime;
-
-        // If time is running out play siren
-        if (objectSlider.value < 5 && !isSirenPlaying)
-        {
-            PlaySiren();
-        }
-        else if (objectSlider.value > 5 && isSirenPlaying)
-        {
-            StopSiren();
-        }*/
     }
 
     void PlaySiren()

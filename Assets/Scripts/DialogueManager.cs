@@ -152,6 +152,7 @@ public class DialogueManager : MonoBehaviour
         //STOPS talking animation
         anim.Play(baseAnimText);
         dialogueUI.SetActive(false);
+        curResponseTracker = 0;
     }
 
 }

@@ -16,6 +16,7 @@ MonoBehaviour:
   dialogueSet1:
   - "I think you\u2019re full of fudge. Nothing\u2019s gonna happen when the timer
     reaches zero.\r"
+  - Sure it is.
   - "You\u2019re full of it. They probably just put it in to keep us working harder.\r"
   - Whatever it is, it's nothing.
   dialogueSet2:
