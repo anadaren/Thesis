@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
     {
         // Checks distance between player and NPC
         distance = Vector3.Distance(player.transform.position, this.transform.position);
-        if (distance <= 4f)
+        if (distance <= 6f)
         {
             
             // Triggers dialogue on click with interaction ray

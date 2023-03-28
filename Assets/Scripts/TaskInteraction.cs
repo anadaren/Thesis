@@ -20,7 +20,7 @@ public class TaskInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objectSlider.maxValue = 120;
+        objectSlider.maxValue = 180;
         objectSlider.value = objectSlider.maxValue;
     }
 
@@ -80,7 +80,7 @@ public class TaskInteraction : MonoBehaviour
     public void taskCheck()
     {
         distance = Vector3.Distance(player.transform.position, this.transform.position);
-        if (distance <= 6f)
+        if (distance <= 7f)
         {
             switch (objectName)
             {
