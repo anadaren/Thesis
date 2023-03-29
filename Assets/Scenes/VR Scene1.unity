@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 8ef7b5a2fcb48774792928ef70fb3af5,
+  m_LightingDataAsset: {fileID: 112000000, guid: f49cfd22e528d85458644791b034d401,
     type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
@@ -18313,7 +18313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf59dcd58b9f74010845b2edd09df1da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 602
+  startingTime: 601
   timeTxt: {fileID: 1929290335}
   events: {fileID: 2095457239}
   gameStage: 1

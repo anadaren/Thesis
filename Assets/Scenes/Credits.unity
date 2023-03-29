@@ -456,11 +456,21 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 88732551}
+    - target: {fileID: 1832130683681630831, guid: f8e8c456e61c38045914d695c4caa394,
+        type: 3}
+      propertyPath: m_LineLength
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1832130684175191713, guid: f8e8c456e61c38045914d695c4caa394,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 88732551}
+    - target: {fileID: 1832130684175191715, guid: f8e8c456e61c38045914d695c4caa394,
+        type: 3}
+      propertyPath: m_LineLength
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1832130684234162739, guid: f8e8c456e61c38045914d695c4caa394,
         type: 3}
       propertyPath: m_ClearFlags
@@ -1158,7 +1168,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newGameScene: Title
+  tutorialScene: 
   TitlePanel: {fileID: 1814307131}
+  StartPanel: {fileID: 0}
   InfoPanel: {fileID: 1814307131}
 --- !u!1 &1202696174
 GameObject:

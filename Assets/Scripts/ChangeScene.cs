@@ -7,11 +7,10 @@ public class ChangeScene : MonoBehaviour
 {
     // allows the levels loaded to be inputted
     public string newGameScene; // name of desired next scene
-    //string titleScene = "Title"; // name of title scene
-    //string optionsScene = "Settings"; // name of options scene
-    //string infoScene = "Info"; // name of credits scene
+    public string tutorialScene;
 
     public GameObject TitlePanel;
+    public GameObject StartPanel;
     public GameObject InfoPanel;
 
     public void NextScene()
@@ -20,12 +19,19 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(newGameScene);
     }
 
+    public void TutScene()
+    {
+        // loads inputted level, starting at one for new games
+        SceneManager.LoadScene(tutorialScene);
+    }
+
     public void GoToMenu()
     {
         // loads menu
         //SceneManager.LoadScene(titleScene);
         TitlePanel.SetActive(true);
         InfoPanel.SetActive(false);
+        StartPanel.SetActive(false);
     }
 
     public void GoToInfo()
@@ -36,11 +42,13 @@ public class ChangeScene : MonoBehaviour
         InfoPanel.SetActive(true);
     }
 
-    /*public void GoToInfo()
+    public void GoToStart()
     {
-        // loads credits
-        SceneManager.LoadScene(infoScene);
-    }*/
+        // loads options
+        //SceneManager.LoadScene(optionsScene);
+        TitlePanel.SetActive(false);
+        StartPanel.SetActive(true);
+    }
 
 
     public void QuitGame()
