@@ -11215,6 +11215,11 @@ PrefabInstance:
       objectReference: {fileID: 540642759}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
+      propertyPath: talkAnimText
+      value: idle3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
       propertyPath: npcDialogueBox
       value: 
       objectReference: {fileID: 1090574978}
@@ -17178,7 +17183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1246073775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18124,12 +18129,12 @@ PrefabInstance:
     - target: {fileID: 1832130682784725816, guid: f8e8c456e61c38045914d695c4caa394,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1832130682784725817, guid: f8e8c456e61c38045914d695c4caa394,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1832130682784725817, guid: f8e8c456e61c38045914d695c4caa394,
         type: 3}
@@ -18334,7 +18339,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1321606840
 GameObject:
