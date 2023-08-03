@@ -5449,8 +5449,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.75
-  m_Text: Press and hold the grip button, aim where you want to go, and release to
-    teleport.
+  m_Text: Press and hold the trigger button, aim where you want to go, and release
+    to teleport.
 --- !u!222 &1755145478
 CanvasRenderer:
   m_ObjectHideFlags: 0

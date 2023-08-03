@@ -24,7 +24,6 @@ public class DialogueManager : MonoBehaviour
 
     public Text npcName;
     public Text npcDialogueBox;
-    //public Text playerResponse;
 
     public GameManager dialogueSet;
 
