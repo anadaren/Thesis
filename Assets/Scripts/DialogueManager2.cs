@@ -68,40 +68,20 @@ public class DialogueManager2 : MonoBehaviour
         }
     }
 
+
     void StartConversation()
     {
         // Tom talks first
         turnChecker = true;
 
         isTalking = true;
-
-        //plays Tom's talking sound
-        talking.Play();
-
-        //plays Tom's talking animation
-        anim.Play(talkAnimText);
-
+       
         //sets response to first in index
         curResponseTracker = 0;
 
-        // Sets Tom's dialogue UI to active
-        dialogueUI.SetActive(true);
-        npcName.text = npc.name;
-
-        // Dialogue set changes as time goes on
-        if (GameManager.currentDialogueSet == 1) 
-        {
-            npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 2)
-        {
-            npcDialogueBox.text = npc.dialogueSet2[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 3)
-        {
-            npcDialogueBox.text = npc.dialogueSet3[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 4)
-        {
-            npcDialogueBox.text = npc.dialogueSet4[curResponseTracker];
-        }
+        // Starts NPC 1 talking
+        startNPC1();
+       
     }
 
     void ContinueConversation()
@@ -112,9 +92,39 @@ public class DialogueManager2 : MonoBehaviour
         // If it's Tom's turn to talk
         if(turnChecker)
         {
-            npcName.text = npc.name;
+            // Makes sure the other guy isn't talking
+            stopNPC2();
 
-            if (GameManager.currentDialogueSet == 1)
+            // Starts NPC 1 talking
+            startNPC1();
+            
+        } // Or if it's Tim's turn to talk
+        else if(!turnChecker)
+        {
+            // Makes sure the other guy isn't talking
+            stopNPC1();
+
+            // Starts NPC 2 talking
+            startNPC2();
+            curResponseTracker++;
+
+        }
+            
+    }
+
+    void startNPC1()
+    {
+         //plays Tom's talking sound
+        talking.Play();
+
+        //plays Tom's talking animation
+        anim.Play(talkAnimText);
+
+        // Sets Tom's dialogue UI to active
+        dialogueUI.SetActive(true);
+        npcName.text = npc.name;
+
+        if (GameManager.currentDialogueSet == 1)
             {
                 if (curResponseTracker < npc.dialogueSet1.Length)
                 {
@@ -155,17 +165,25 @@ public class DialogueManager2 : MonoBehaviour
                     EndConversation();
                 }
             }
-            else
-            {
-                EndConversation();
-            }
-        } // Or if it's Tim's turn to talk
-        else if(!turnChecker)
+        else
         {
-            npcName2.text = npc2.name;
-            curResponseTracker++;
+            EndConversation();
+        }
+    }
 
-            if (GameManager.currentDialogueSet == 1)
+    void startNPC2()
+    {
+         //plays Tim's talking sound
+        talking2.Play();
+
+        //plays Tim's talking animation
+        anim2.Play(talkAnimText);
+
+        // Sets Tim's dialogue UI to active
+        dialogueUI2.SetActive(true);
+        npcName2.text = npc2.name;
+
+        if (GameManager.currentDialogueSet == 1)
             {
                 if (curResponseTracker < npc2.dialogueSet1.Length)
                 {
@@ -206,12 +224,28 @@ public class DialogueManager2 : MonoBehaviour
                     EndConversation();
                 }
             }
-            else
-            {
-                EndConversation();
-            }
+        else
+        {
+            EndConversation();
         }
-            
+    }
+
+    void stopNPC1()
+    {
+        //STOPS talking sound
+        talking.Stop();
+        //STOPS talking animation
+        anim.Play(baseAnimText);
+        dialogueUI.SetActive(false);
+    }
+
+    void stopNPC2()
+    {
+        //STOPS talking sound
+        talking2.Stop();
+        //STOPS talking animation
+        anim2.Play(baseAnimText);
+        dialogueUI2.SetActive(false);
     }
 
     void EndConversation()
@@ -219,23 +253,14 @@ public class DialogueManager2 : MonoBehaviour
         // If it's Tom's turn to talk
         if(turnChecker)
         {
-            isTalking = false;
-            //STOPS talking sound
-            talking.Stop();
-            //STOPS talking animation
-            anim.Play(baseAnimText);
-            dialogueUI.SetActive(false);
-            curResponseTracker = 0;
-        } else if(!turnChecker)
+            stopNPC1();
+        } else
         {
-            isTalking = false;
-            //STOPS talking sound
-            talking2.Stop();
-            //STOPS talking animation
-            anim2.Play(baseAnimText);
-            dialogueUI2.SetActive(false);
-            curResponseTracker = 0;
+            stopNPC2();
         }
+
+        isTalking = false;
+        curResponseTracker = 0;
     }
 
 }

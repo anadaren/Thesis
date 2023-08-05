@@ -1080,8 +1080,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+      - m_Target: {fileID: 78169950}
+        m_TargetAssemblyTypeName: DialogueManager2, Assembly-CSharp
         m_MethodName: dialogueCheck
         m_Mode: 1
         m_Arguments:
@@ -8488,6 +8488,21 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1612179278}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 78169950}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: dialogueCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager2, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375565, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: m_Enabled
@@ -21062,6 +21077,21 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1612179278}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 78169950}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: dialogueCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375564, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager2, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375565, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: m_Enabled
