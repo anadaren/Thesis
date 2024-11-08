@@ -18,7 +18,7 @@ MonoBehaviour:
     reaches zero.\r"
   - Sure it is.
   - "You\u2019re full of it. They probably just put it in to keep us working harder.\r"
-  - Whatever it is, it's nothing.
+  - Whatever it is, it's definitely nothing we have to worry about.
   dialogueSet2:
   - "It\u2019s a timer, it\u2019s not looking at anything.\r"
   dialogueSet3:
@@ -27,8 +27,8 @@ MonoBehaviour:
     an idea?\r"
   - "I don\u2019t know. But you don\u2019t know either!\r"
   dialogueSet4:
-  - "Holy cow, maybe we are all gonna die\r"
+  - "Holy cow, maybe we are all gonna die\r."
   - "Well look at you mate, if you knew all along why didn\u2019t you do anything?\r"
-  - Tell my wife I love her
+  - Tell my wife I love her.
   - "No, but I\u2019d rather the boys at the office think I do\r"
   playerDialogue: []

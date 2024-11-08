@@ -20,6 +20,7 @@ MonoBehaviour:
   - He's such a dick and I'd rather eat Johnson's casserole than talk to him for
     too long.
   - I hate him and his stupid expensive office parties that everyone hates.
+  - Thinks a free pizza party makes up for how much of an asshole he is.
   - But I need this job so whatever I guess.
   dialogueSet2:
   - Hey
@@ -29,7 +30,10 @@ MonoBehaviour:
   - I hate him and his stupid expensive office parties that everyone hates.
   - But I need this job so whatever I guess.
   dialogueSet3:
-  - I wish that severed head over there was our boss.
+  - I wasn't supposed to work here, you know. My degree is in creative writing.
+  - I was supposed to be an author but no one bought my books.
+  - So now I'm stuck here for the rest of my life.
+  - I wish that severed head over there was our boss I hate that guy so much.
   dialogueSet4:
   - We're all gonna die but I hope our boss dies first.
   - If we all descend into anarchy do you think anyone would notice if I strangled

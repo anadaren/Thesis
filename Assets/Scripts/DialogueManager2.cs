@@ -11,48 +11,54 @@ public class DialogueManager2 : MonoBehaviour
 
     static bool isTalking = false;
 
-    float distance;
+    public bool canInteract = false;
+
     int curResponseTracker = 0;
 
-    public GameObject player;
 
     public GameObject dialogueUI;
-    public GameObject dialogueUI2;
 
     public Animator anim;
     public Animator anim2;
+
     public AudioSource talking;
-    public AudioSource talking2;
 
     public string baseAnimText = "Idle";
     public string talkAnimText = "Talking";
 
     public Text npcName;
-    public Text npcName2;
     public Text npcDialogueBox;
-    public Text npcDialogueBox2;
 
     public GameManager dialogueSet;
-    public GameManager dialogueSet2;
 
     public bool turnChecker = true;
     // True = Tom's turn to speak
     // False = Tim's turn to speak
 
+    public string[] currentDialogueSet;
+    public string[] currentDialogueSet2;
+
+    public Interaction interaction;
+
     void Start()
     {
         // Sets presence of the UI textbox to false
         dialogueUI.SetActive(false);
-        dialogueUI2.SetActive(false);
+        talking = GetComponent<AudioSource>();
+    }
+
+    void Update()
+    {
+        if(canInteract)
+        {
+            dialogueCheck();
+        }
     }
 
     public void dialogueCheck()
     {
-        // Checks distance between player and NPC
-        distance = Vector3.Distance(player.transform.position, this.transform.position);
-        if (distance <= 6f)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            
             // Triggers dialogue on click with interaction ray
             if(isTalking == false)
             {
@@ -61,12 +67,9 @@ public class DialogueManager2 : MonoBehaviour
             {
                 ContinueConversation();
             }
-        } else
-        {
-            // Closes textbox if you get too far away [FIX ME]
-            dialogueUI.SetActive(false);
         }
     }
+
 
     void StartConversation()
     {
@@ -81,6 +84,9 @@ public class DialogueManager2 : MonoBehaviour
         //plays Tom's talking animation
         anim.Play(talkAnimText);
 
+        // Locks player position
+        interaction.controller.speed = 0;
+
         //sets response to first in index
         curResponseTracker = 0;
 
@@ -88,154 +94,95 @@ public class DialogueManager2 : MonoBehaviour
         dialogueUI.SetActive(true);
         npcName.text = npc.name;
 
-        // Dialogue set changes as time goes on
-        if (GameManager.currentDialogueSet == 1) 
-        {
-            npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 2)
-        {
-            npcDialogueBox.text = npc.dialogueSet2[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 3)
-        {
-            npcDialogueBox.text = npc.dialogueSet3[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 4)
-        {
-            npcDialogueBox.text = npc.dialogueSet4[curResponseTracker];
-        }
+
+        // Gets first set of dialogue
+        GetCurrentDialogueSet();
+
+        // Tom speaks first
+        npcDialogueBox.text = currentDialogueSet[curResponseTracker];
+
+        curResponseTracker++;
     }
 
     void ContinueConversation()
     {
         // Switches who is talking
         turnChecker = !turnChecker;
-
         // If it's Tom's turn to talk
-        if(turnChecker)
+        if(turnChecker && curResponseTracker < currentDialogueSet.Length)
         {
+            if (curResponseTracker < currentDialogueSet.Length)
+            {
+                npcDialogueBox.text = currentDialogueSet[curResponseTracker];
+            }
+            else
+            {
+                EndConversation();
+            }
+
+            anim.Play(talkAnimText);
+            anim2.Play(baseAnimText);
             npcName.text = npc.name;
 
-            if (GameManager.currentDialogueSet == 1)
-            {
-                if (curResponseTracker < npc.dialogueSet1.Length)
-                {
-                    npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
-                }
-                else
-                {
-                    EndConversation();
-                }
-            } else if (GameManager.currentDialogueSet == 2)
-            {
-                if (curResponseTracker < npc.dialogueSet2.Length)
-                {
-                    npcDialogueBox.text = npc.dialogueSet2[curResponseTracker];
-                }
-                else
-                {
-                    EndConversation();
-                }
-            } else if (GameManager.currentDialogueSet == 3)
-            {
-                if (curResponseTracker < npc.dialogueSet3.Length)
-                {
-                    npcDialogueBox.text = npc.dialogueSet3[curResponseTracker];
-                }
-                else
-                {
-                    EndConversation();
-                }
-            } else if (GameManager.currentDialogueSet == 4)
-            {
-                if (curResponseTracker < npc.dialogueSet4.Length)
-                {
-                    npcDialogueBox.text = npc.dialogueSet4[curResponseTracker];
-                }
-                else
-                {
-                    EndConversation();
-                }
-            }
-            else
-            {
-                EndConversation();
-            }
         } // Or if it's Tim's turn to talk
-        else if(!turnChecker)
+        else if(!turnChecker && curResponseTracker < currentDialogueSet2.Length)
         {
-            npcName2.text = npc2.name;
-            curResponseTracker++;
 
-            if (GameManager.currentDialogueSet == 1)
+            if (curResponseTracker < currentDialogueSet2.Length)
             {
-                if (curResponseTracker < npc2.dialogueSet1.Length)
-                {
-                    npcDialogueBox2.text = npc2.dialogueSet1[curResponseTracker];
-                }
-                else
-                {
-                    EndConversation();
-                }
-            } else if (GameManager.currentDialogueSet == 2)
-            {
-                if (curResponseTracker < npc2.dialogueSet2.Length)
-                {
-                    npcDialogueBox2.text = npc2.dialogueSet2[curResponseTracker];
-                }
-                else
-                {
-                    EndConversation();
-                }
-            } else if (GameManager.currentDialogueSet == 3)
-            {
-                if (curResponseTracker < npc2.dialogueSet3.Length)
-                {
-                    npcDialogueBox2.text = npc2.dialogueSet3[curResponseTracker];
-                }
-                else
-                {
-                    EndConversation();
-                }
-            } else if (GameManager.currentDialogueSet == 4)
-            {
-                if (curResponseTracker < npc2.dialogueSet4.Length)
-                {
-                    npcDialogueBox2.text = npc2.dialogueSet4[curResponseTracker];
-                }
-                else
-                {
-                    EndConversation();
-                }
+                npcDialogueBox.text = currentDialogueSet2[curResponseTracker];
             }
             else
             {
                 EndConversation();
             }
+
+            curResponseTracker++;
+            anim.Play(baseAnimText);
+            anim2.Play(talkAnimText);
+            npcName.text = npc2.name;
+        } else
+        {
+            EndConversation();
+            return;
         }
             
     }
 
+    void GetCurrentDialogueSet()
+    {
+        // Dialogue set changes as time goes on
+        if (GameManager.currentDialogueSet == 1) 
+        {
+            currentDialogueSet = npc.dialogueSet1;
+            currentDialogueSet2 = npc2.dialogueSet1;
+        } else if (GameManager.currentDialogueSet == 2)
+        {
+            currentDialogueSet = npc.dialogueSet2;
+            currentDialogueSet2 = npc2.dialogueSet2;
+        } else if (GameManager.currentDialogueSet == 3)
+        {
+            currentDialogueSet = npc.dialogueSet3;
+            currentDialogueSet2 = npc2.dialogueSet3;
+        } else if (GameManager.currentDialogueSet == 4)
+        {
+            currentDialogueSet = npc.dialogueSet4;
+            currentDialogueSet2 = npc2.dialogueSet4;
+        }
+    }
+
     void EndConversation()
     {
-        // If it's Tom's turn to talk
-        if(turnChecker)
-        {
-            isTalking = false;
-            //STOPS talking sound
-            talking.Stop();
-            //STOPS talking animation
-            anim.Play(baseAnimText);
-            dialogueUI.SetActive(false);
-            curResponseTracker = 0;
-        } else if(!turnChecker)
-        {
-            isTalking = false;
-            //STOPS talking sound
-            talking2.Stop();
-            //STOPS talking animation
-            anim2.Play(baseAnimText);
-            dialogueUI2.SetActive(false);
-            curResponseTracker = 0;
-        }
+        isTalking = false;
+        //STOPS talking sound
+        talking.Stop();
+        //STOPS talking animation
+        anim.Play(baseAnimText);
+        anim2.Play(baseAnimText);
+        dialogueUI.SetActive(false);
+        curResponseTracker = 0;
+        //Unlocks player position
+        interaction.controller.speed = 5;
     }
 
 }

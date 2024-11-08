@@ -14,14 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPC_name: Chuck
   dialogueSet1:
-  - You know, I have a new startup idea.
-  - "A new social media website that sends slime directly to your friends home every
-    time you like their post.\r"
+  - I have this a new startup idea.
+  - "A new social media website that sends a bucket of slime directly to your friends
+    home every time you like their post.\r"
   - "I\u2019ll call it Slimr."
   - "I\u2019m still working out the bugs, but I think it'll really blow up."
   dialogueSet2:
   - My startup isn't going so well.
   - "Apparently it\u2019s a \u201Cbad idea\u201D but what do other people know anyway?"
+  - I'm going to invest five hundred thousand dollars into it, then they'll see.
+  - The money is all crowdfunded anyway, so it doesn't matter what happens to it.
   dialogueSet3:
   - That's it! New startup idea--a severed head tracker.
   - "An app that\u2019ll alert you right before a severed head comes careening through
@@ -31,7 +33,8 @@ MonoBehaviour:
   - "Insensitive? How do you mean?\r"
   dialogueSet4:
   - Things are kind of scary right now.
-  - "Now\u2019s probably a good time to get into the big-timer-demolition industry."
+  - "Now\u2019s probably a good time to get into the giant-wall-timer-demolition
+    industry."
   - "And as soon as my startup takes off, I\u2019ll be in the clear, disaster or
     not."
   - "Don\u2019t worry, I won\u2019t forget the people that helped along the way!"

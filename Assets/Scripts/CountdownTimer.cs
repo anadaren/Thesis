@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public float startingTime = 601f;
+    public float startingTime = 1201f;
     public static float currentTime = 0f;
 
     public Text timeTxt;
@@ -58,7 +58,7 @@ public class CountdownTimer : MonoBehaviour
     {
         //Checks which of the four stages the game is in
         //Triggers events at different times
-        if (currentTime <= 450 && currentTime > 300)
+        if (currentTime <= 900 && currentTime > 600)
         {
             gameStage = 2;
 
@@ -68,7 +68,7 @@ public class CountdownTimer : MonoBehaviour
                 twoReached = true;
             }
         }
-        else if (currentTime <= 300 && currentTime > 150)
+        else if (currentTime <= 600 && currentTime > 300)
         {
             gameStage = 3;
             if (threeReached == false)
@@ -77,7 +77,7 @@ public class CountdownTimer : MonoBehaviour
                 threeReached = true;
             }
         }
-        else if (currentTime <= 150)
+        else if (currentTime <= 300)
         {
             gameStage = 4;
             if (fourReached == false)
@@ -99,11 +99,6 @@ public class CountdownTimer : MonoBehaviour
         float currentSeconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         timeTxt.text = string.Format("00:{0:00}:{1:00}", currentMinutes, currentSeconds);
-
-    }
-
-    void eventFunction(float time)
-    {
 
     }
 

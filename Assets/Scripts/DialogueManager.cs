@@ -10,10 +10,10 @@ public class DialogueManager : MonoBehaviour
 
     static bool isTalking = false;
 
-    float distance;
+    public bool canInteract = false;
+
     int curResponseTracker = 0;
 
-    public GameObject player;
     public GameObject dialogueUI;
 
     private Animator anim;
@@ -27,6 +27,8 @@ public class DialogueManager : MonoBehaviour
 
     public GameManager dialogueSet;
 
+    public Interaction interaction;
+
     void Start()
     {
         //Animation
@@ -37,13 +39,18 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
     }
 
+    void Update()
+    {
+        if(canInteract)
+        {   
+            dialogueCheck();
+        }
+    }
+
     public void dialogueCheck()
     {
-        // Checks distance between player and NPC
-        distance = Vector3.Distance(player.transform.position, this.transform.position);
-        if (distance <= 6f)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            
             // Triggers dialogue on click with interaction ray
             if(isTalking == false)
             {
@@ -52,11 +59,8 @@ public class DialogueManager : MonoBehaviour
             {
                 ContinueConversation();
             }
-        } else
-        {
-            // Closes textbox if you get too far away
-            dialogueUI.SetActive(false);
         }
+        
     }
 
     void StartConversation()
@@ -65,7 +69,10 @@ public class DialogueManager : MonoBehaviour
         //plays talking sound
         talking.Play();
         //plays talking animation
-        anim.Play(talkAnimText);
+        //anim.Play(talkAnimText);
+
+        // Locks player position
+        interaction.controller.speed = 0;
 
         //sets response to first in index
         curResponseTracker = 0;
@@ -92,8 +99,8 @@ public class DialogueManager : MonoBehaviour
 
     void ContinueConversation()
     {
-        npcName.text = npc.name;
         curResponseTracker++;
+        npcName.text = npc.name;
 
         if (GameManager.currentDialogueSet == 1)
         {
@@ -149,9 +156,11 @@ public class DialogueManager : MonoBehaviour
         //STOPS talking sound
         talking.Stop();
         //STOPS talking animation
-        anim.Play(baseAnimText);
+        //anim.Play(baseAnimText);
         dialogueUI.SetActive(false);
         curResponseTracker = 0;
+        //Unlocks player position
+        interaction.controller.speed = 5;
     }
 
 }

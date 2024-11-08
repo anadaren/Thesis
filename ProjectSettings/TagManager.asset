@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Right Hand
   - Left Hand
+  - NPC
+  - Task
+  - NPCpair
   layers:
   - Default
   - TransparentFX

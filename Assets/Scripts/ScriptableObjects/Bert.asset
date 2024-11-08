@@ -18,7 +18,7 @@ MonoBehaviour:
   - I watch the button. It's what I do.
   - It's a very important job.
   dialogueSet2:
-  - "It feels like you don\u2019t see the importance of pressing the button.\r"
+  - "I feel like you don\u2019t see the importance of pressing the button.\r"
   - "Well, trust me, it\u2019s the glue that holds this whole operation together.\r"
   - "You may not see it, but it sets off a huge chain reaction that keeps this whole
     place afloat.\r"

@@ -24,19 +24,22 @@ MonoBehaviour:
   - "Some people may think this job is dull, but I don\u2019t.\r"
   - "I like tedious tasks, I don\u2019t have to think too much."
   - "Easiest thing in the world to me, I wouldn\u2019t want to do anything else!"
-  - "Wish I didn\u2019t work seventy hours a week though.\r"
+  - "Wish I didn\u2019t work seventy hours a week though.\r That part sucks."
   dialogueSet3:
   - "Uh-oh\u2026looks like things are happeningggg."
   - But whatever happens, at least I'll still have my papers!!
+  - They always make me feel better.
+  - I hope my kids are okay though I haven't seen them in eight years.
   dialogueSet4:
   - "I just wanted to file my papers. But I don\u2019t know why all of this is happening.\r"
-  - "We\u2019re all gonna die when that timer runs out.\r"
+  - "We\u2019re all gonna die when that timer runs out, aren't we?"
   - "It doesn\u2019t matter how it happens, but it will. And there was nothing we
     could\u2019ve done.\r"
   - I just wanted to distract myself with my papers for as long as I could. All I
     had was my papers.
   - "I thought if I could distract myself long enough then maybe I wouldn\u2019t
     even notice when it all goes dark."
-  - "But there\u2019s no getting around this. I hope I can at least bring my papers."
+  - "But there\u2019s no getting around this. I hope I can at least bring my papers
+    wherever we end up."
   - Thanks for listening, friend.
   playerDialogue: []
