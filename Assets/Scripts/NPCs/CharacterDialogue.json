@@ -3,193 +3,389 @@
         {
             "name": "Bert",
             "dialogue1": [
-                ""
+                "I'm the button supervisor.",
+                "I watch the button. It's what I do.",
+                "It's a very important job."
             ],
             "dialogue2": [
-                ""
+                "I feel like you don't see the importance of pressing the button.",
+                "Well, trust me, it's the glue that holds this whole operation together.",
+                "You may not see it, but it sets off a huge chain reaction that keeps this whole place afloat.",
+                "Respect the button."
             ],
             "dialogue3": [
-                ""
+                "Don't care, just press the button."
             ],
             "dialogue4": [
-                ""
+                "I don't care what happens with no stupid timer. Just press the button.",
+                "It's all I do. All I've ever done. I'd be nothing without it.",
+                "I'm not going to live in fear. I'm an American."
             ]
         },
         {
             "name": "Bingo",
             "dialogue1": [
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue2": [
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue3": [
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue4": [
+                "",
+                "",
+                "",
                 ""
             ]
         },
         {
             "name": "Chuck",
             "dialogue1": [
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue2": [
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue3": [
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue4": [
+                "",
+                "",
+                "",
+                "",
                 ""
             ]
         },
         {
             "name": "Jambles",
             "dialogue1": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue2": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue3": [
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue4": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
             ]
         },
         {
             "name": "Johnson",
             "dialogue1": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue2": [
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue3": [
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue4": [
+                "",
                 ""
             ]
         },
         {
             "name": "Smorf",
             "dialogue1": [
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue2": [
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue3": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
                 ""
             ],
             "dialogue4": [
+                "",
+                "",
                 ""
             ]
         },
         {
             "name": "Snacky",
             "dialogue1": [
-                ""
+                "Aghhhh don't bother me, I'm on my break.",
+                "Don't ask me about that timer, it'll finish counting down before my break ends, so not my problem."
             ],
             "dialogue2": [
-                ""
+                "Not now, I'm on break.",
+                "I work 27 hours a day, I should get an uninterrupted break."
             ],
             "dialogue3": [
-                ""
+                "Mannnnn that severed head over there is none of my business. I'm on break.",
+                "You think that's bad? That's nothing. I've had this job for 71 years, I've seen some things.",
+                "Just wait until you hear about the arm of '92, now THAT was gruesome.",
+                "Sometimes heads just fly through windows, nothing worth interrupting my break about.",
+                "It'll all blow over by tomorrow. Always does."
             ],
             "dialogue4": [
-                ""
+                "Now that power's out?? Jeeeeez what's a guy gotta do to get a decent break around here.",
+                "I told you, I don't care about any stupid timer, I'm on break.",
+                "That's the last thing I'll say about it. If I die at least it'll be on my break."
             ]
         },
         {
             "name": "Spiffy",
             "dialogue1": [
-                ""
+                "Hum hum, I love filing papers!",
+                "Love the smell, love the sound, even love the taste!",
+                "I've been doing this for years, seventy hours a week, and I love every minute of it!",
+                "Day in day out, just papers papers papers! Love it!"
             ],
             "dialogue2": [
-                ""
+                "My favorite thing about filing papers is figuring out where they go in the cabinets.",
+                "Some people may think this job is dull, but I don't.",
+                "I like tedious tasks, I don't have to think too much.",
+                "Easiest thing in the world to me, I wouldn't want to do anything else!",
+                "Wish I didn't work seventy hours a week though. That part sucks."
             ],
             "dialogue3": [
-                ""
+                "Uh-oh…looks like things are happeningggg.",
+                "But whatever happens, at least I'll still have my papers!!",
+                "They always make me feel better.",
+                "I hope my kids are okay though I haven't seen them in eight years."
             ],
             "dialogue4": [
-                ""
+                "I just wanted to file my papers. But I don't know why all of this is happening.",
+                "We're all gonna die when that timer runs out, aren't we?",
+                "It doesn't matter how it happens, but it will. And there was nothing we could've done.",
+                "I just wanted to distract myself with my papers for as long as I could. All I had was my papers.",
+                "I thought if I could distract myself long enough then maybe I wouldn't even notice when it all goes dark.",
+                "But there's no getting around this. I hope I can at least bring my papers wherever we end up.",
+                "Thanks for listening, friend."
             ]
         },
         {
             "name": "Tim",
             "dialogue1": [
-                ""
+                "That's what they want you to think, man.",
+                "I'm telling you, when that thing reaches zero, poof, we're all gonna be in a lab where they start poking us with big metal sticks until we keel over.",
+                "Doesn't look like it's working. Any other ideas?"
             ],
             "dialogue2": [
-                ""
+                "I don't like the way that things looking at me…"
             ],
             "dialogue3": [
-                ""
+                "Nah, that's stupid.",
+                "When would aliens get in here? We've been standing here all day."
+
             ],
             "dialogue4": [
-                ""
+                "I tried to tell you!",
+                "Nothing to do. I'm just one guy.",
+                "You have a wife?",
+                "Fair enough. Tell my fake wife I love her too."
             ]
         },
         {
             "name": "Tom",
             "dialogue1": [
-                ""
+                "I think you're full of fudge. Nothing's gonna happen when the timer reaches zero.",
+                "Sure it is.",
+                "You're full of it. They probably just put it in to keep us working harder.",
+                "Whatever it is, it's definitely nothing we have to worry about."
             ],
             "dialogue2": [
-                ""
+                "It's a timer, it's not looking at anything."
             ],
             "dialogue3": [
-                ""
+                "Maybe it's aliens that put this here.",
+                "You think it's a random omniscient doomsday clock, but aliens are too stupid an idea?",
+                "I don't know. But you don't know either!"
             ],
             "dialogue4": [
-                ""
+                "Holy cow, maybe we are all gonna die.",
+                "Well look at you mate, if you knew all along why didn't you do anything?",
+                "Tell my wife I love her.",
+                "No, but I'd rather the boys at the office think I do"
             ]
         },
         {
             "name": "Walter",
             "dialogue1": [
-                ""
+                "You know, I think the timer is a message.",
+                "I know we're not supposed to talk about it, but whatever, I'm kind of a rebel.",
+                "Anyway, I think it's a sign that we all need to stop all of what's happening in the world.",
+                "We have to return to our divine energies and go back to worshiping nature, the way humans are supposed to.",
+                "That's all we have to do!",
+                "Anyway that's why I'm not vaccinated."
             ],
             "dialogue2": [
-                ""
+                "You know, I really do love working here. Spreadsheets get me into the creative flow.",
+                "Reminds me of when I went backpacking through Canada last year.",
+                "I got really in touch with my inner self. Especially when all the locals threw things at me and told me to leave.",
+                "I love seeing how different people live.",
+                "I guess you could say I had a spiritual awakening or something.",
+                "I feel so much more enlightened since I got back. I'm so much better at spreadsheets now you would not believe."
             ],
             "dialogue3": [
-                ""
+                "I saw the severed head that fell through the window.",
+                "Ugh, I feel so overwhelmed with everything that's happening. I need a meditation break.",
+                "...",
+                "...",
+                "Wow. I feel so much better now. You should try doing that",
+                "You'll forget all about that head and that silly old timer.",
+                "Namaste, bud."
             ],
             "dialogue4": [
-                ""
+                "You know, I'm not scared of the timer. It's just a big clock, I don't see what the big deal is.",
+                "As long as we're all in touch with our inner selves everything will be just fine.",
+                "I was at my yoga studio last weekend and Bethany told me that we could solve all the world's problems if only we could get our own internal conflicts resolved.",
+                "I think she was onto something with that. Maybe the real timer is just in our minds. And in my mind, it's harmless, so I'm not worried.",
+                "Annnnnd if we do all die, maybe it was just our time, you know?",
+                "Maybe the earth needs a good cleansing!",
+                "Like do we really neeeeeeeed all the people who are lactose intolerant?"
             ]
         },
         {
             "name": "Boss Man",
             "dialogue1": [
-                ""
+                "Hello! You must be our new hire.",
+                "I'm your boss, as I'm sure you've guess from my huge office here.",
+                "But don't think of me like your boss, I'm your friend!",
+                "I get along with all the guys here. They love it when I throw very cool, very expensive office parties.",
+                "So make yourself at home!",
+                "At your desk! While you're working!"
             ],
             "dialogue2": [
-                ""
+                "I'd like to give a shout out to the boys for bringing in that new TV into the break room.",
+                "I figured it was good for morale so I let them keep it.",
+                "Just something cool bosses like me like to do. A reward for everyone's hard work!"
             ],
             "dialogue3": [
-                ""
+                "Good news! Sales are up 20% and thoughts and prayers down 30%!",
+                "Also, sorry, we're taking away the TV in the break room.",
+                "The donut worker could kind of see it from his station, and it was really tanking his productivity.",
+                "And more productivity for him means more donuts for us! It's a win win!"
             ],
             "dialogue4": [
-                ""
+                "Eeeeeee thing's are getting a little scary around here huh?",
+                "I think now's a good time to let everyone know I'll be going to Guam all of next week.",
+                "What? No I'm not going to get away from you all. I'll have you know it's my daughter's cousin's grandma's grandson's dad's divorce-versary party!",
+                "I can't just miss it!",
+                "But don't worry, you can email me if you need anything, I'll respond right within the next two weeks for sure!",
+                "And I'll be sending my thoughts and prayers for anyyyyything that may or may not happen here while I'm gone.",
+                "I'll be sure to bring back the whole office some keychains!"
             ]
         },
         {
             "name": "Donut Guy",
             "dialogue1": [
-                ""
+                "Hi. Would you like a donut?",
+                "It's my job to offer you Suits donuts on your breaks.",
+                "I don't get a break.",
+                "Or a donut.",
+                "But that's okay. I spend all day making them. I don't even like donuts anymore."
             ],
             "dialogue2": [
-                ""
+                "zzz",
+                "zzzzzzz",
+                "zzzzzzzzzzzzz",
+                "OH oh sorry I must have fallen asleep for a second there.",
+                "I don't get a lot of sleep.",
+                "Mostly just working.",
+                "I'm saving up to move to a state where I have rights.",
+                "Keeps getting farther away it feels like.",
+                "Anyway we sell bear claws now. They're pretty good, if you want to try one."
             ],
             "dialogue3": [
-                ""
+                "Hey, serious question.",
+                "Have you ever thought about what happens when the timer runs out?",
+                "No, you guys never do.",
+                "I wouldn't expect you to. It's not in your job description.",
+                "But I do. When that thing reaches zero we're all going down.",
+                "Oh except BossMan over there, he's headed to Mars.",
+                "They'll never catch him up there.",
+                "Selling donuts at a time like this, I must be a real idiot!",
+                "But oh well. My rent is due and I wouldn't know what else to do anyway.",
+                "At least the rich man's grave is gonna be the same size as mine, brother.",
+                "Also I heard you guys found a severed head in the office wtf is that about???"
             ],
             "dialogue4": [
                 ""

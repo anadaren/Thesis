@@ -1,61 +1,66 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO.Pipes;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
+using Microsoft.VisualBasic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public NPC npc;
-
-    static bool isTalking = false;
-
-    public bool canInteract = false;
-
-    int curResponseTracker = 0;
-
-    public GameObject dialogueUI;
-
-    private Animator anim;
-    private AudioSource talking;
-
-    public string baseAnimText = "Idle";
-    public string talkAnimText = "Talking";
-
-    public Text npcName;
-    public Text npcDialogueBox;
-
-    private EventManager dialogueSet;
-
-    public Interaction interaction;
+    public static DialogueManager Instance { get; private set; }
 
     public float playerSensitivity = 2;
     public float playerSpeed = 5;
+
+    public Interaction interaction;
+
+    [Header("Dialogue variables")]
+    public GameObject dialogueUI;
+    public Text npcName;
+    public Text npcDialogueBox;
+    int curResponseTracker = 0;
+    static bool isTalking = false;
+
+    private EventManager dialogueSet;
+
+    [Header("Current NPC variables")]
+    private DialogueObject currentNpc;
+
+    public string baseAnimText = "Idle";
+    public string talkAnimText = "Talking";
+    private Animator anim;
+    private AudioSource talking;
+
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(this);
+        }
+    }
 
     void Start()
     {
         // EventManager
         dialogueSet = EventManager.Instance;
-        //Animation
-        anim = GetComponent<Animator>();
-        //AudioSource
-        talking = GetComponent<AudioSource>();
         // Sets presence of the UI textbox to false
         dialogueUI.SetActive(false);
+        interaction = GetComponent<Interaction>();
     }
 
-    void Update()
+    public void AssignCurrentText(DialogueObject npc)
     {
-        if(canInteract)
-        {   
-            dialogueCheck();
-        }
+        currentNpc = npc;
+        anim = npc.anim;
+        talking = npc.talking;
     }
 
-    public void dialogueCheck()
+
+
+    public void DialogueCheck()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
@@ -67,6 +72,8 @@ public class DialogueManager : MonoBehaviour
             {
                 ContinueConversation();
             }
+
+            interaction.interactText.GetComponent<Text>().text = "Press Space to Interact.";
         }
         
     }
@@ -91,34 +98,34 @@ public class DialogueManager : MonoBehaviour
 
         // Sets dialogue UI to active
         dialogueUI.SetActive(true);
-        npcName.text = npc.name;
+        npcName.text = currentNpc.npc.name;
 
         // Dialogue set changes as time goes on
         if (EventManager.currentDialogueSet == 1) 
         {
-            npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
+            npcDialogueBox.text = currentNpc.npc.dialogueSet1[curResponseTracker];
         } else if (EventManager.currentDialogueSet == 2)
         {
-            npcDialogueBox.text = npc.dialogueSet2[curResponseTracker];
+            npcDialogueBox.text = currentNpc.npc.dialogueSet2[curResponseTracker];
         } else if (EventManager.currentDialogueSet == 3)
         {
-            npcDialogueBox.text = npc.dialogueSet3[curResponseTracker];
+            npcDialogueBox.text = currentNpc.npc.dialogueSet3[curResponseTracker];
         } else if (EventManager.currentDialogueSet == 4)
         {
-            npcDialogueBox.text = npc.dialogueSet4[curResponseTracker];
+            npcDialogueBox.text = currentNpc.npc.dialogueSet4[curResponseTracker];
         }
     }
 
     void ContinueConversation()
     {
         curResponseTracker++;
-        npcName.text = npc.name;
+        npcName.text = currentNpc.npc.name;
 
         if (EventManager.currentDialogueSet == 1) // Phase 1
         {
-            if (curResponseTracker < npc.dialogueSet1.Length)
+            if (curResponseTracker < currentNpc.npc.dialogueSet1.Length)
             {
-                npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
+                npcDialogueBox.text = currentNpc.npc.dialogueSet1[curResponseTracker];
             }
             else
             {
@@ -126,9 +133,9 @@ public class DialogueManager : MonoBehaviour
             }
         } else if (EventManager.currentDialogueSet == 2) // Phase 2
         {
-            if (curResponseTracker < npc.dialogueSet2.Length)
+            if (curResponseTracker < currentNpc.npc.dialogueSet2.Length)
             {
-                npcDialogueBox.text = npc.dialogueSet2[curResponseTracker];
+                npcDialogueBox.text =currentNpc.npc.dialogueSet2[curResponseTracker];
             }
             else
             {
@@ -136,9 +143,9 @@ public class DialogueManager : MonoBehaviour
             }
         } else if (EventManager.currentDialogueSet == 3) // Phase 3
         {
-            if (curResponseTracker < npc.dialogueSet3.Length)
+            if (curResponseTracker < currentNpc.npc.dialogueSet3.Length)
             {
-                npcDialogueBox.text = npc.dialogueSet3[curResponseTracker];
+                npcDialogueBox.text = currentNpc.npc.dialogueSet3[curResponseTracker];
             }
             else
             {
@@ -146,9 +153,9 @@ public class DialogueManager : MonoBehaviour
             }
         } else if (EventManager.currentDialogueSet == 4) // Phase 4
         {
-            if (curResponseTracker < npc.dialogueSet4.Length)
+            if (curResponseTracker < currentNpc.npc.dialogueSet4.Length)
             {
-                npcDialogueBox.text = npc.dialogueSet4[curResponseTracker];
+                npcDialogueBox.text = currentNpc.npc.dialogueSet4[curResponseTracker];
             }
             else
             {
@@ -184,5 +191,4 @@ public class DialogueManager : MonoBehaviour
         interaction.controller.speed = playerSpeed;
         interaction.controller.sensitivity = playerSensitivity;
     }
-
 }

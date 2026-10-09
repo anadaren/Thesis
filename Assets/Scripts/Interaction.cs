@@ -19,7 +19,7 @@ public class Interaction : MonoBehaviour
     {
         if(col.gameObject.tag == "NPC")
         {
-            col.gameObject.GetComponent<DialogueManager>().canInteract = true;
+            col.gameObject.GetComponent<DialogueObject>().canInteract = true;
             interactText.GetComponent<Text>().text = "Press Space to Talk.";
             interactText.SetActive(true);
         } else if(col.gameObject.tag == "NPCpair")
@@ -29,7 +29,12 @@ public class Interaction : MonoBehaviour
             interactText.SetActive(true);
         } else if(col.gameObject.tag == "Task")
         {
-            col.gameObject.GetComponent<TaskInteractions>().canInteract = true;
+            col.gameObject.GetComponent<Task>().canInteract = true;
+            interactText.GetComponent<Text>().text = "Press Space to Interact.";
+            interactText.SetActive(true);
+        } else if(col.gameObject.tag == "Door")
+        {
+            col.gameObject.GetComponent<DialogueObject>().canInteract = true;
             interactText.GetComponent<Text>().text = "Press Space to Interact.";
             interactText.SetActive(true);
         }
@@ -38,7 +43,7 @@ public class Interaction : MonoBehaviour
     {
         if(col.gameObject.tag == "NPC")
         {
-            col.gameObject.GetComponent<DialogueManager>().canInteract = false;
+            col.gameObject.GetComponent<DialogueObject>().canInteract = false;
             interactText.SetActive(false);
         }  else if(col.gameObject.tag == "NPCpair")
         {
@@ -46,7 +51,11 @@ public class Interaction : MonoBehaviour
             interactText.SetActive(false);
         }  else if(col.gameObject.tag == "Task")
         {
-            col.gameObject.GetComponent<TaskInteractions>().canInteract = false;
+            col.gameObject.GetComponent<Task>().canInteract = false;
+            interactText.SetActive(false);
+        } else if(col.gameObject.tag == "Door")
+        {
+            col.gameObject.GetComponent<DialogueObject>().canInteract = false;
             interactText.SetActive(false);
         }
     }
