@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -288,7 +288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.33355, y: -152}
+  m_AnchoredPosition: {x: -0.33355, y: -158.7}
   m_SizeDelta: {x: 100.86, y: 39.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464034165
@@ -868,7 +868,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.62148, y: -111.12}
+  m_AnchoredPosition: {x: -0.62148, y: -130.4}
   m_SizeDelta: {x: 2597.9, y: 255.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879629808
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 78831bfcb0b4146d7824bcaa54b84c20, type: 3}
     m_FontSize: 72
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 72
@@ -904,8 +904,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Controls: Use the Trigger Buttons to teleport and the Grip Buttons to
-    interact with objects and UI.'
+  m_Text: 'Controls: WASD to  move, Space to interact.'
 --- !u!222 &879629809
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1117,8 +1116,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.33357, y: 23.275}
-  m_SizeDelta: {x: 2598.9, y: 996.9427}
+  m_AnchoredPosition: {x: -0.33357, y: 1.9919}
+  m_SizeDelta: {x: 2598.9, y: 1214.6562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1060004815
 MonoBehaviour:
@@ -1158,15 +1157,17 @@ MonoBehaviour:
     global crises.
 
 
-    That being said, this project is not only about offices.
+    That being said, that''s not all this project is about.
 
 
     This
     version of the game is a non-VR port of my IDM Master''s Thesis Project. You
-    can read more about the original version as well as my dev process at: anadaren.github.io/src/somethingscoming.html
+    can see more of my work at anadaren.itch.io
 
-    *Note:
-    This is a Desktop port of a VR game, so keep that in mind.'
+
+    *Note: This is a Desktop port
+    of a VR game, so keep that in mind. Also, this project was made before AI took
+    off. Go figure.'
 --- !u!222 &1060004816
 CanvasRenderer:
   m_ObjectHideFlags: 0

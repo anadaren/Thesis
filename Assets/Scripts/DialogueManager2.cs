@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO.Pipes;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +21,7 @@ public class DialogueManager2 : MonoBehaviour
 
     public Animator anim;
     public Animator anim2;
+    public Animator uiAnim;
 
     public AudioSource talking;
 
@@ -29,7 +31,7 @@ public class DialogueManager2 : MonoBehaviour
     public Text npcName;
     public Text npcDialogueBox;
 
-    public GameManager dialogueSet;
+    public EventManager dialogueSet;
 
     public bool turnChecker = true;
     // True = Tom's turn to speak
@@ -39,6 +41,9 @@ public class DialogueManager2 : MonoBehaviour
     public string[] currentDialogueSet2;
 
     public Interaction interaction;
+
+    public float playerSensitivity = 2;
+    public float playerSpeed = 5;
 
     void Start()
     {
@@ -84,8 +89,11 @@ public class DialogueManager2 : MonoBehaviour
         //plays Tom's talking animation
         anim.Play(talkAnimText);
 
-        // Locks player position
+        // Stores player speed/sensitivity and then locks them
+        playerSpeed = interaction.controller.speed;
+        playerSensitivity = interaction.controller.sensitivity;
         interaction.controller.speed = 0;
+        interaction.controller.sensitivity = 0;
 
         //sets response to first in index
         curResponseTracker = 0;
@@ -152,19 +160,19 @@ public class DialogueManager2 : MonoBehaviour
     void GetCurrentDialogueSet()
     {
         // Dialogue set changes as time goes on
-        if (GameManager.currentDialogueSet == 1) 
+        if (EventManager.currentDialogueSet == 1) 
         {
             currentDialogueSet = npc.dialogueSet1;
             currentDialogueSet2 = npc2.dialogueSet1;
-        } else if (GameManager.currentDialogueSet == 2)
+        } else if (EventManager.currentDialogueSet == 2)
         {
             currentDialogueSet = npc.dialogueSet2;
             currentDialogueSet2 = npc2.dialogueSet2;
-        } else if (GameManager.currentDialogueSet == 3)
+        } else if (EventManager.currentDialogueSet == 3)
         {
             currentDialogueSet = npc.dialogueSet3;
             currentDialogueSet2 = npc2.dialogueSet3;
-        } else if (GameManager.currentDialogueSet == 4)
+        } else if (EventManager.currentDialogueSet == 4)
         {
             currentDialogueSet = npc.dialogueSet4;
             currentDialogueSet2 = npc2.dialogueSet4;
@@ -182,7 +190,9 @@ public class DialogueManager2 : MonoBehaviour
         dialogueUI.SetActive(false);
         curResponseTracker = 0;
         //Unlocks player position
-        interaction.controller.speed = 5;
+        interaction.controller.speed = playerSpeed;
+        interaction.controller.sensitivity = playerSensitivity;
+        dialogueUI.GetComponent<Animator>().SetTrigger("EndConvo");
     }
 
 }

@@ -8,7 +8,7 @@ public class FirstPersonController : MonoBehaviour
     // 2. Camera follows mouse
     public Transform playerTransform;
     public CharacterController playerCharacterController;
-    public float sensitivity = 1;
+    public float sensitivity = 2;
     public float speed = 5;
 
     // Camera axes

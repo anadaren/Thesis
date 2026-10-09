@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class EventManager : MonoBehaviour
 {
+    public static EventManager Instance { get; private set; }
+
+    [Header("Office Set")]
     public GameObject office;
     public GameObject bigGuy;
     public GameObject head;
@@ -13,24 +16,25 @@ public class GameManager : MonoBehaviour
     public GameObject donutCanvas;
     public Animator bossManAnim;
 
+    [Header("Event Objects")]
     public GameObject headUI;
     public GameObject tv;
-    public GameObject wallWriting;
+    public GameObject wallWriting1;
     public GameObject wallWriting2;
     public GameObject wallWriting3;
     public GameObject wallWriting4;
     public GameObject wallStuff;
 
+    [Header("Audio")]
     // Non-Npc Sounds
     public AudioSource ticking;
     public AudioSource music;
     public AudioClip endingSound;
 
+
+    [Header("Materials")]
     // Changing Office Materials
     public Material Material1;
-
-    // Changes Dialogue Sets
-    public static int currentDialogueSet = 1;
 
     // Changes Background Color
     public Camera cam;
@@ -38,32 +42,43 @@ public class GameManager : MonoBehaviour
     public Color color2;
 
 
+    // Changes Dialogue Sets
+    public static int currentDialogueSet = 1;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(this);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        cam.backgroundColor = color1;   
+        cam.backgroundColor = color1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
-    public void eventTwo()
+    public void EventTwo()
     {
         // Switches Dialogue to Set 2
         currentDialogueSet = 2;
 
         // Switched sky color
-        //float t = Mathf.PingPong(Time.time, 5) / 5;
-        cam.backgroundColor = Color.Lerp(color1, color2, 5);
+        // TODO: transition isn't smooth
+        cam.backgroundColor = Color.Lerp(color1, color2, 50);
 
         // Sets TV to active
         tv.SetActive(true);
     }
 
-    public void eventThree()
+    public void EventThree()
     {
         // Switches Dialogue to Set 3
         currentDialogueSet = 3;
@@ -75,12 +90,11 @@ public class GameManager : MonoBehaviour
         // Takes TV away
         tv.SetActive(false);
 
-
         // Wall Writing
-        wallWriting.SetActive(true);
+        wallWriting1.SetActive(true);
     }
 
-    public void eventFour()
+    public void EventFour()
     {
         // Switches Dialogue to Set 4
         currentDialogueSet = 4;
@@ -107,14 +121,14 @@ public class GameManager : MonoBehaviour
         music.Stop();
     }
 
-    public void endingScene()
+    public void EndingScene()
     {
 
         // Wall Writing
         wallWriting4.SetActive(true);
 
         // Sets off end cutscene
-        StartCoroutine(pauseForEffect());
+        StartCoroutine(PauseForEffect());
         
         // Disable ticking
         ticking.Stop();
@@ -124,12 +138,12 @@ public class GameManager : MonoBehaviour
         ticking.Play();
     }
 
-    IEnumerator pauseForEffect()
+    IEnumerator PauseForEffect()
     {
         yield return new WaitForSeconds(6);
 
         //Change scene at the end of the cutscene
-        StartCoroutine(endCount());
+        StartCoroutine(EndCount());
 
         //Spawns big guy and animates office walls
         GameObject bigBoss = Instantiate(bigGuy, new Vector3(0,2,-60), Quaternion.Euler(new Vector3(0,90,0)));
@@ -138,9 +152,9 @@ public class GameManager : MonoBehaviour
         office.GetComponent<Animator>().Play("OfficeAnim");
     }
 
-    IEnumerator endCount()
+    IEnumerator EndCount()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(15f);
         SceneManager.LoadScene("Credits");
     }
 }

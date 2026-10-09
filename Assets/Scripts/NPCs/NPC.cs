@@ -17,21 +17,4 @@ public class NPC : ScriptableObject
     [TextArea(3, 15)]
     public string[] playerDialogue;
 
-    /*public List<NPC> npcList;
-
-    void Awake()
-    {
-        public NPC[] npcs;
-
-        NPC npcsInJson = JsonUtility.FromJson<NPC>(jsonFile.text);
-        if (npcsInJson == null || npcsInJson.npcs == null)
-        {
-            throw new NPCParseException($"Could not parse npcs JSON: {jsonFile}");
-        }
-
-        foreach (NPC npc in npcsInJson.npcs)
-        {
-            npcList.Add(npc);
-        }
-    }*/
 }

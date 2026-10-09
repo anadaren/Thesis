@@ -5,11 +5,8 @@ using UnityEngine.UI;
 
 public class TaskInteractions : MonoBehaviour
 {
-    public CountdownTimer gameStage;
-
     public Slider objectSlider;
     public string objectName;
-
 
     public bool canInteract = false;
 
@@ -23,12 +20,19 @@ public class TaskInteractions : MonoBehaviour
 
     private bool isSirenPlaying = false;
 
+    // Warning text notification
+    public GameObject warning;
+    public Animator warningAnim;
+    public Text warningText;
+    private int lateTasks = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         taskSound = GetComponent<AudioSource>();
         objectSlider.maxValue = 180;
         objectSlider.value = objectSlider.maxValue;
+        warning.SetActive(false);
     }
 
     void Update()
@@ -69,25 +73,25 @@ public class TaskInteractions : MonoBehaviour
 
     void HandleCountdown()
     {
-        float currentTime = CountdownTimer.currentTime;
+        int currentStage = CountdownTimer.Instance.gameStage;
 
             // max amount of time on slider goes down as time goes down
-            if(currentTime >= 0)
+            if(!CountdownTimer.Instance.endReached)
             {
-                if (currentTime >= 450)
+                if (currentStage == 1)
                 {
                     objectSlider.maxValue = 180;
                 }
-                else if (currentTime >= 300)
+                else if (currentStage == 2)
                 {
                     objectSlider.maxValue = 150;
                 }
-                else if (currentTime >= 150)
+                else if (currentStage == 3)
                 {
                     objectSlider.maxValue = 120;
                 }
             }
-            else if (currentTime == 0)
+            else
             {
                 StopSiren();
             }
@@ -98,12 +102,22 @@ public class TaskInteractions : MonoBehaviour
             // If time is running out play siren
             if (objectSlider.value < 5 && !isSirenPlaying)
             {
+                lateTasks++;
                 PlaySiren();
             }
             else if (objectSlider.value > 5 && isSirenPlaying)
             {
+                lateTasks--;
                 StopSiren();
             }
+            
+            // Warning text
+            if(lateTasks > 0)
+            {
+                warningText.text = "WARNING: Behind on (" + lateTasks + ") task(s).";
+                if(!warning.active) warning.SetActive(true);
+                
+            } else if(lateTasks == 0 && warning.active) { StartCoroutine(WarningNotif()); }
     }
 
     void PlaySiren()
@@ -121,7 +135,6 @@ public class TaskInteractions : MonoBehaviour
     }
 
     
-
     public void CheckMessages()
     {
         ResetSlider();
@@ -167,5 +180,12 @@ public class TaskInteractions : MonoBehaviour
         taskSound.clip = ding;
         taskSound.loop = false;
         taskSound.Play();
+    }
+
+    IEnumerator WarningNotif()
+    {
+        warningAnim.SetTrigger("Cancel");
+        yield return new WaitForSeconds(1f);
+        warning.SetActive(false);
     }
 }

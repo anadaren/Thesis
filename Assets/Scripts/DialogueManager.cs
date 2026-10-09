@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO.Pipes;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,12 +28,17 @@ public class DialogueManager : MonoBehaviour
     public Text npcName;
     public Text npcDialogueBox;
 
-    public GameManager dialogueSet;
+    private EventManager dialogueSet;
 
     public Interaction interaction;
 
+    public float playerSensitivity = 2;
+    public float playerSpeed = 5;
+
     void Start()
     {
+        // EventManager
+        dialogueSet = EventManager.Instance;
         //Animation
         anim = GetComponent<Animator>();
         //AudioSource
@@ -69,10 +77,14 @@ public class DialogueManager : MonoBehaviour
         //plays talking sound
         talking.Play();
         //plays talking animation
-        //anim.Play(talkAnimText);
+        anim.Play(Animator.StringToHash("Base Layer.Talking"));
 
-        // Locks player position
+
+        // Stores player speed/sensitivity and then locks them
+        playerSpeed = interaction.controller.speed;
+        playerSensitivity = interaction.controller.sensitivity;
         interaction.controller.speed = 0;
+        interaction.controller.sensitivity = 0;
 
         //sets response to first in index
         curResponseTracker = 0;
@@ -82,16 +94,16 @@ public class DialogueManager : MonoBehaviour
         npcName.text = npc.name;
 
         // Dialogue set changes as time goes on
-        if (GameManager.currentDialogueSet == 1) 
+        if (EventManager.currentDialogueSet == 1) 
         {
             npcDialogueBox.text = npc.dialogueSet1[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 2)
+        } else if (EventManager.currentDialogueSet == 2)
         {
             npcDialogueBox.text = npc.dialogueSet2[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 3)
+        } else if (EventManager.currentDialogueSet == 3)
         {
             npcDialogueBox.text = npc.dialogueSet3[curResponseTracker];
-        } else if (GameManager.currentDialogueSet == 4)
+        } else if (EventManager.currentDialogueSet == 4)
         {
             npcDialogueBox.text = npc.dialogueSet4[curResponseTracker];
         }
@@ -102,7 +114,7 @@ public class DialogueManager : MonoBehaviour
         curResponseTracker++;
         npcName.text = npc.name;
 
-        if (GameManager.currentDialogueSet == 1)
+        if (EventManager.currentDialogueSet == 1) // Phase 1
         {
             if (curResponseTracker < npc.dialogueSet1.Length)
             {
@@ -112,7 +124,7 @@ public class DialogueManager : MonoBehaviour
             {
                 EndConversation();
             }
-        } else if (GameManager.currentDialogueSet == 2)
+        } else if (EventManager.currentDialogueSet == 2) // Phase 2
         {
             if (curResponseTracker < npc.dialogueSet2.Length)
             {
@@ -122,7 +134,7 @@ public class DialogueManager : MonoBehaviour
             {
                 EndConversation();
             }
-        } else if (GameManager.currentDialogueSet == 3)
+        } else if (EventManager.currentDialogueSet == 3) // Phase 3
         {
             if (curResponseTracker < npc.dialogueSet3.Length)
             {
@@ -132,7 +144,7 @@ public class DialogueManager : MonoBehaviour
             {
                 EndConversation();
             }
-        } else if (GameManager.currentDialogueSet == 4)
+        } else if (EventManager.currentDialogueSet == 4) // Phase 4
         {
             if (curResponseTracker < npc.dialogueSet4.Length)
             {
@@ -152,15 +164,25 @@ public class DialogueManager : MonoBehaviour
 
     void EndConversation()
     {
+        StartCoroutine(EndConvo());
+    }
+
+    IEnumerator EndConvo()
+    {
         isTalking = false;
         //STOPS talking sound
         talking.Stop();
+        //plays talking animation
+        anim.SetBool("isTalking", false);
+        dialogueUI.GetComponent<Animator>().SetTrigger("EndConvo");
+        yield return new WaitForSeconds(.5f);
         //STOPS talking animation
         //anim.Play(baseAnimText);
         dialogueUI.SetActive(false);
         curResponseTracker = 0;
         //Unlocks player position
-        interaction.controller.speed = 5;
+        interaction.controller.speed = playerSpeed;
+        interaction.controller.sensitivity = playerSensitivity;
     }
 
 }

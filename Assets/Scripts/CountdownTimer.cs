@@ -5,85 +5,104 @@ using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour
 {
+    public static CountdownTimer Instance { get; private set; }
+    
+
     public float startingTime = 1201f;
-    public static float currentTime = 0f;
+    public float currentTime = 0f;
+    private float threeQuarterTime = 900f;
+    private float halfTime = 600f;
+    private float quarterTime = 300f;
 
     public Text timeTxt;
 
-    public GameManager events;
+    private EventManager events;
 
-    public float gameStage = 1;
+    public int gameStage = 1;
     public bool twoReached = false;
     public bool threeReached = false;
     public bool fourReached = false;
     public bool endReached = false;
 
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(this);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         currentTime = startingTime;
+        events = EventManager.Instance;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Checks if ending has been reached   
+        // Countdown  
         if (currentTime >= 0)
         {
             currentTime -= Time.deltaTime;
-            checkStage();
+            CheckStage();
         }
         else
         {
             currentTime = 0;
-            endReached = true;
-        }
-
-        if (currentTime <= 0 && endReached == false)
-        {
-
-            //play ending cutscene
-            events.endingScene();
-            endReached = true;
         }
         
         // Displays Time on big timer
         DisplayTime(currentTime);
-
-
-
     }
 
-    void checkStage()
+    void CheckStage()
     {
         //Checks which of the four stages the game is in
         //Triggers events at different times
-        if (currentTime <= 900 && currentTime > 600)
+        if(currentTime > threeQuarterTime) return;
+
+        if (currentTime <= threeQuarterTime && currentTime > halfTime)
         {
             gameStage = 2;
 
             if (twoReached == false)
             {
-                events.eventTwo();
+                events.EventTwo();
                 twoReached = true;
             }
         }
-        else if (currentTime <= 600 && currentTime > 300)
+        else if (currentTime <= halfTime && currentTime > quarterTime)
         {
             gameStage = 3;
             if (threeReached == false)
             {
-                events.eventThree();
+                events.EventThree();
                 threeReached = true;
             }
         }
-        else if (currentTime <= 300)
+        else if (currentTime <= quarterTime)
         {
             gameStage = 4;
             if (fourReached == false)
             {
-                events.eventFour();
+                events.EventFour();
                 fourReached = true;
+            }
+        }
+        else if (currentTime <= 0)
+        {
+            gameStage = 5;
+            if(endReached == false)
+            {
+                //play ending cutscene
+                events.EndingScene();
+                endReached = true;
             }
         }
     }
@@ -99,7 +118,6 @@ public class CountdownTimer : MonoBehaviour
         float currentSeconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         timeTxt.text = string.Format("00:{0:00}:{1:00}", currentMinutes, currentSeconds);
-
     }
 
 }
