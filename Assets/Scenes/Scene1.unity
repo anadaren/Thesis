@@ -805,6 +805,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
+      propertyPath: name
+      value: Bert
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
       propertyPath: UIanim
       value: 
       objectReference: {fileID: 1572159632}
@@ -1027,8 +1032,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d263c1c0fbcc42b5b771f25f2a6adee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc: {fileID: 11400000, guid: 8792fc0dd4fb7eb489efb6d49c48e73f, type: 2}
-  npc2: {fileID: 11400000, guid: abf5b827a7af73f49be8eba43e5fe12d, type: 2}
+  npc:
+    name: 
+    dialogueSet1: []
+    dialogueSet2: []
+    dialogueSet3: []
+    dialogueSet4: []
+  npc2:
+    name: 
+    dialogueSet1: []
+    dialogueSet2: []
+    dialogueSet3: []
+    dialogueSet4: []
   canInteract: 0
   dialogueUI: {fileID: 1572159630}
   anim: {fileID: 633617222}
@@ -1307,6 +1322,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 560f4b538f7d4344586958fc60145f76,
         type: 2}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: name
+      value: Spiffy
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: UIanim
@@ -2240,6 +2260,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: cb40e21595f219240a21fe7db74d92d1,
         type: 2}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: name
+      value: Smorf
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: UIanim
@@ -4941,6 +4966,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14ddb0c0d7a54d243b686c2c5f056ff8, type: 3}
+--- !u!1 &434542890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434542891}
+  - component: {fileID: 434542892}
+  m_Layer: 0
+  m_Name: JSONParser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434542891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434542890}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.819088, y: -6.9195743, z: -8.413635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1797496571}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &434542892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434542890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588d6b4e41fbf104cb40c615390cb776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonFile: {fileID: 4900000, guid: 2bf57e4fbca86b54ea5454b13837c86f, type: 3}
+  npcList: []
 --- !u!1001 &436652804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9163,7 +9234,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fecc7dc52394fed93e9713aa52cbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc: {fileID: 11400000, guid: d30cd2fd7e24cd240b7c197a7487b33b, type: 2}
+  npc:
+    name: 
+    dialogueSet1: []
+    dialogueSet2: []
+    dialogueSet3: []
+    dialogueSet4: []
+  name: Boss Man
   canInteract: 0
   anim: {fileID: 0}
   talking: {fileID: 0}
@@ -9516,6 +9593,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5eb70062d21f2074f9b809ed3fb39c3b,
         type: 2}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: name
+      value: Jambles
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: UIanim
@@ -10902,7 +10984,7 @@ BoxCollider:
   m_GameObject: {fileID: 923770388}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2, y: 5, z: 2}
   m_Center: {x: 0, y: 2.5, z: 0.5}
@@ -10918,7 +11000,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fecc7dc52394fed93e9713aa52cbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc: {fileID: 11400000, guid: 73a163f8a487dba44b24930513b1a1c4, type: 2}
+  npc:
+    name: 
+    dialogueSet1: []
+    dialogueSet2: []
+    dialogueSet3: []
+    dialogueSet4: []
+  name: 
   canInteract: 0
   anim: {fileID: 0}
   talking: {fileID: 0}
@@ -10932,7 +11020,7 @@ SphereCollider:
   m_GameObject: {fileID: 923770388}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 4
   m_Center: {x: 0, y: 1, z: 0}
@@ -13810,6 +13898,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
+      propertyPath: name
+      value: Johnson
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
       propertyPath: UIanim
       value: 
       objectReference: {fileID: 1572159632}
@@ -14038,7 +14131,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fecc7dc52394fed93e9713aa52cbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc: {fileID: 11400000, guid: 6c620d5cac4010d4e8df546103419814, type: 2}
+  npc:
+    name: 
+    dialogueSet1: []
+    dialogueSet2: []
+    dialogueSet3: []
+    dialogueSet4: []
+  name: Donut Guy
   canInteract: 0
   anim: {fileID: 0}
   talking: {fileID: 0}
@@ -14323,6 +14422,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: f8bd2bf74b876bc4ca530b86b0e8f8e9,
         type: 2}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: name
+      value: Chuck
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: UIanim
@@ -14800,7 +14904,7 @@ MonoBehaviour:
   playerTransform: {fileID: 1246073780}
   playerCharacterController: {fileID: 1246073776}
   sensitivity: 2
-  speed: 5
+  speed: 4
 --- !u!143 &1246073776
 CharacterController:
   m_ObjectHideFlags: 0
@@ -14892,7 +14996,7 @@ Transform:
   m_GameObject: {fileID: 1246073774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 1, z: 6.75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 160130458}
@@ -15091,6 +15195,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 70971f416381c034ca77100c4c2a3614,
         type: 2}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: name
+      value: Bingo
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: UIanim
@@ -16370,6 +16479,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
+      propertyPath: name
+      value: Snacky
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
       propertyPath: UIanim
       value: 
       objectReference: {fileID: 1572159632}
@@ -17523,6 +17637,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: afdb08a0af7ede94087c797519378816,
         type: 2}
+    - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
+        type: 3}
+      propertyPath: name
+      value: Walter
+      objectReference: {fileID: 0}
     - target: {fileID: 1471290030625375562, guid: ef1a189d0694550428374c729c217c46,
         type: 3}
       propertyPath: UIanim
@@ -20644,6 +20763,7 @@ Transform:
   - {fileID: 1327225125}
   - {fileID: 1060272608}
   - {fileID: 716684287}
+  - {fileID: 434542891}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24470,7 +24590,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fecc7dc52394fed93e9713aa52cbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc: {fileID: 0}
+  npc:
+    name: 
+    dialogueSet1: []
+    dialogueSet2: []
+    dialogueSet3: []
+    dialogueSet4: []
+  name: 
   canInteract: 0
   anim: {fileID: 0}
   talking: {fileID: 0}

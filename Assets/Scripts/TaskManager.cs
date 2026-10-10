@@ -45,12 +45,12 @@ public class TaskManager : MonoBehaviour
     {
         if(lateTasks > 0)
         {
-            if(warning.active) warningText.text = "WARNING: Behind on (" + lateTasks + ") task(s).";
+            if(warning.activeSelf) warningText.text = "WARNING: Behind on (" + lateTasks + ") task(s).";
             else warning.SetActive(true);
         }
         else
         {
-            if(warning.active) StartCoroutine(CancelWarning());
+            if(warning.activeSelf) StartCoroutine(CancelWarning());
         }
     }
 

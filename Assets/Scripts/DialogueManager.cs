@@ -176,13 +176,13 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator EndConvo()
     {
-        isTalking = false;
         //STOPS talking sound
         talking.Stop();
         //plays talking animation
         anim.SetBool("isTalking", false);
         dialogueUI.GetComponent<Animator>().SetTrigger("EndConvo");
         yield return new WaitForSeconds(.5f);
+        isTalking = false;
         //STOPS talking animation
         //anim.Play(baseAnimText);
         dialogueUI.SetActive(false);

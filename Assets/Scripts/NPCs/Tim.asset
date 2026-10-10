@@ -19,7 +19,8 @@ MonoBehaviour:
     be in a lab where they start poking us with big metal sticks until we keel over.\r"
   - "Doesn\u2019t look like it\u2019s working. Any other ideas?\r"
   dialogueSet2:
-  - "I don\u2019t like the way that things looking at me\u2026"
+  - How long has that thing even been there?
+  - "Well I don\u2019t like the way that things looking at me\u2026"
   dialogueSet3:
   - "Nah, that\u2019s stupid.\r"
   - "When would aliens get in here? We've been standing here all day.\r"

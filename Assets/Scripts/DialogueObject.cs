@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class DialogueObject : MonoBehaviour
 {
     public NPC npc;
+    public string name;
 
-    
 
     public bool canInteract = false;
 
@@ -27,6 +27,8 @@ public class DialogueObject : MonoBehaviour
         talking = GetComponent<AudioSource>();
 
         dialogueManager = DialogueManager.Instance;
+
+        npc = JSONParser.Instance.npcList[JSONParser.Instance.SearchForNPC(name)];
     }
 
     void Update()

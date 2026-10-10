@@ -2,21 +2,21 @@
     "npcs": [
         {
             "name": "Bert",
-            "dialogue1": [
+            "dialogueSet1": [
                 "I'm the button supervisor.",
                 "I watch the button. It's what I do.",
                 "It's a very important job."
             ],
-            "dialogue2": [
+            "dialogueSet2": [
                 "I feel like you don't see the importance of pressing the button.",
                 "Well, trust me, it's the glue that holds this whole operation together.",
                 "You may not see it, but it sets off a huge chain reaction that keeps this whole place afloat.",
                 "Respect the button."
             ],
-            "dialogue3": [
+            "dialogueSet3": [
                 "Don't care, just press the button."
             ],
-            "dialogue4": [
+            "dialogueSet4": [
                 "I don't care what happens with no stupid timer. Just press the button.",
                 "It's all I do. All I've ever done. I'd be nothing without it.",
                 "I'm not going to live in fear. I'm an American."
@@ -24,187 +24,186 @@
         },
         {
             "name": "Bingo",
-            "dialogue1": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet1": [
+                "Hey",
+                "You didn't hear this from me but I hope our boss dies literally I hate that guy so much.",
+                "He's such a dick and I'd rather eat Johnson's casserole than talk to him for too long.",
+                "I hate him and his stupid expensive office parties that everyone hates.",
+                "Thinks a free pizza party makes up for how much of an asshole he is.",
+                "But I need this job so whatever I guess."
             ],
-            "dialogue2": [
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet2": [
+                "Hey",
+                "You didn't hear this from me but I hope our boss dies literally I hate that guy so much.",
+                "He's a dick and I'd rather eat Johnson's casserole than talk to him for too long.",
+                "I hate him and his stupid expensive office parties that everyone hates.",
+                "But I need this job so whatever I guess."
             ],
-            "dialogue3": [
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet3": [
+                "I wasn't supposed to work here, you know. My degree is in creative writing.",
+                "I was supposed to be an author but no one bought my books.",
+                "So now I'm stuck here for the rest of my life.",
+                "I wish that severed head over there was our boss I hate that guy so much."
             ],
-            "dialogue4": [
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet4": [
+                "We're all gonna die but I hope our boss dies first.",
+                "If we all descend into anarchy do you think anyone would notice if I strangled him with my tie?",
+                "Don't answer that. I'm gonna do it anyway.",
+                "Ask not for whom the bell tolls, it tolls for thee, bitch!"
             ]
         },
         {
             "name": "Chuck",
-            "dialogue1": [
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet1": [
+                "I have this a new startup idea.",
+                "A new social media website that sends a bucket of slime directly to your friends home every time you like their post.",
+                "I'll call it Slimr.",
+                "I'm still working out the bugs, but I think it'll really blow up."
             ],
-            "dialogue2": [
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet2": [
+                "My startup isn't going so well.",
+                "Apparently it's a “bad idea” but what do other people know anyway?",
+                "I'm going to invest five hundred thousand dollars into it, then they'll see.",
+                "The money is all crowdfunded anyway, so it doesn't matter what happens to it."
             ],
-            "dialogue3": [
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet3": [
+                "That's it! New startup idea--a severed head tracker.",
+                "An app that'll alert you right before a severed head comes careening through your workplace.",
+                "Never be caught off guard again!",
+                "It's perfect. If you get in now I'll give you 1% of the future revenue!",
+                "Insensitive? How do you mean?"
             ],
-            "dialogue4": [
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet4": [
+                "Things are kind of scary right now.",
+                "Now's probably a good time to get into the giant-wall-timer-demolition industry.",
+                "And as soon as my startup takes off, I'll be in the clear, disaster or not.",
+                "Don't worry, I won't forget the people that helped along the way!",
+                "I'll be sure to tag you in all my posts about my humble beginnings."
             ]
         },
         {
             "name": "Jambles",
-            "dialogue1": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet1": [
+                "Hello!",
+                "Welcome to your new job at [Insert Company Here].",
+                "We hope you enjoy your stay, and unlimited PTO!",
+                "What's that? Timer? What timer? I don't see a timer.",
+                "You have a lot of work to do. So I recommend you put those kinds of thoughts out of your head while you’re on company time.",
+                "And send any timer related complaints to HR.",
+                "No, we don't have anyone in HR here right now, why do you ask?",
+                "Anyway,  if you need anything, I'll be right here.",
+                "Literally.",
+                "New company policy states all new hires need their computer continually monitored 24/7 by a senior worker.",
+                "So I'll be seeing you, then! Always."
             ],
-            "dialogue2": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet2": [
+                "How's work going?",
+                "Just kidding, I already know.",
+                "Your productivity is a little bit down from the average…",
+                "I'd keep an eye on it, you don't want to get in trouble with the boss.",
+                "Have you visited his office in the back yet?",
+                "I'd say hi…you don't want to be a stranger when quarterly reviews come back.",
+                "That's way more important than anything about that timer that you keep looking at.",
+                "That still doesn't exist.",
+                "Back to work for you then!"
             ],
-            "dialogue3": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet3": [
+                "You may notice some small changes throughout the office, but don't worry. They won't affect your productivity.",
+                "But you wasting time talking to me will.",
+                "Your tasks are starting to pile up, you should do something about that.",
+                "And ignore anything that may or may not come flying through the windows. That'll only distract you from your work.",
+                "Those are problems for out there, and you need to be focused on the problems in here."
             ],
-            "dialogue4": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet4": [
+                "Small power outage, nothing to worry about. Won't affect productivity.",
+                "And I thought I told you to stop looking at that timer.",
+                "The one that doesn't exist, that is.",
+                "Nothing will happen when it reaches zero.",
+                "But you need to get back to work before I write you up!",
+                "Your shift is nearly over. If there's anything you want to do I suggest you get to it soon.",
+                "I know you have a lot of things on your mind, but I promise nothing could matter more than the work you are doing here today."
             ]
         },
         {
             "name": "Johnson",
-            "dialogue1": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet1": [
+                "New product reviews are in:",
+                "“Works great!”",
+                "“It kind of sucks but it's fine I guess.”",
+                "“My daughter loves it!”",
+                "“Please help god please help us oh my god we are dying stop writing this down and help us.”",
+                "We're going to send a gift basket to that last person, and add a banner to our website to show solidarity.",
+                "Also set a reminder to block them from further product reviews, when you get the chance."
             ],
-            "dialogue2": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet2": [
+                "Our stock is up three points!",
+                "Oops, now it's down four.",
+                "Back up again! Seven!",
+                "Oop, back down by fifteen.",
+                "Wait, now I'm looking at the wrong thing. We don't even make shoes!",
+                "Oh--this just in, we now make shoes!"
             ],
-            "dialogue3": [
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet3": [
+                "The CEO of the company just retweeted me! This is the best day of my life!",
+                "Maybe one day I'll even grind hard enough to get to meet him. He's my idol!",
+                "Those allegations of him owning puppy killing farms were all just baseless rumors anyway.",
+                "Wait hold on WHAT just fell through the window??",
+                "That's weird, I thought that new bill made throwing severed heads through windows illegal in this state except as punishment for a crime."
             ],
-            "dialogue4": [
-                "",
-                ""
+            "dialogueSet4": [
+                "The world can't end now! Our stock just went up again!",
+                "Oops, just checked my phone and they outlawed feeling worried about the future in this state. My bad!"
             ]
         },
         {
             "name": "Smorf",
-            "dialogue1": [
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet1": [
+                "Did you hear about that guy on the news?",
+                "He got hit by a pie truck.",
+                "That's really sad.",
+                "Thoughts and prayers thoughts and prayers."
             ],
-            "dialogue2": [
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet2": [
+                "Hey, who are you voting for the in the next election?",
+                "I like the guy who removes all the breaks from pie trucks.",
+                "I don't really agree with everything he says, like the removing of breaks on ALL pie trucks.",
+                "But he's got a really good foreign policy though, so I can look past it.",
+                "Thoughts and prayers thoughts and prayers."
             ],
-            "dialogue3": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+            "dialogueSet3": [
+                "Um.",
+                "So this head just fell in through the window.",
+                "I don't know where it came from, or who's head it is or anything...",
+                "But it's a severed head alright.",
+                "We need to reinforce our windows, this kind of thing can't just happen!",
+                "The whole office is going to be way too distracted to get anything done now!",
+                "Thanks a lot, whoever threw this….",
+                "Thoughts and prayers thoughts and prayers."
             ],
-            "dialogue4": [
-                "",
-                "",
-                ""
+            "dialogueSet4": [
+                "What's going on out there?",
+                "Are we all going to be heads soon?",
+                "Ughhhh I don't want to think about it. There's no way I'm going to get everything done today…."
             ]
         },
         {
             "name": "Snacky",
-            "dialogue1": [
+            "dialogueSet1": [
                 "Aghhhh don't bother me, I'm on my break.",
                 "Don't ask me about that timer, it'll finish counting down before my break ends, so not my problem."
             ],
-            "dialogue2": [
+            "dialogueSet2": [
                 "Not now, I'm on break.",
                 "I work 27 hours a day, I should get an uninterrupted break."
             ],
-            "dialogue3": [
+            "dialogueSet3": [
                 "Mannnnn that severed head over there is none of my business. I'm on break.",
                 "You think that's bad? That's nothing. I've had this job for 71 years, I've seen some things.",
                 "Just wait until you hear about the arm of '92, now THAT was gruesome.",
                 "Sometimes heads just fly through windows, nothing worth interrupting my break about.",
                 "It'll all blow over by tomorrow. Always does."
             ],
-            "dialogue4": [
+            "dialogueSet4": [
                 "Now that power's out?? Jeeeeez what's a guy gotta do to get a decent break around here.",
                 "I told you, I don't care about any stupid timer, I'm on break.",
                 "That's the last thing I'll say about it. If I die at least it'll be on my break."
@@ -212,26 +211,26 @@
         },
         {
             "name": "Spiffy",
-            "dialogue1": [
+            "dialogueSet1": [
                 "Hum hum, I love filing papers!",
                 "Love the smell, love the sound, even love the taste!",
                 "I've been doing this for years, seventy hours a week, and I love every minute of it!",
                 "Day in day out, just papers papers papers! Love it!"
             ],
-            "dialogue2": [
+            "dialogueSet2": [
                 "My favorite thing about filing papers is figuring out where they go in the cabinets.",
                 "Some people may think this job is dull, but I don't.",
                 "I like tedious tasks, I don't have to think too much.",
                 "Easiest thing in the world to me, I wouldn't want to do anything else!",
                 "Wish I didn't work seventy hours a week though. That part sucks."
             ],
-            "dialogue3": [
+            "dialogueSet3": [
                 "Uh-oh…looks like things are happeningggg.",
                 "But whatever happens, at least I'll still have my papers!!",
                 "They always make me feel better.",
                 "I hope my kids are okay though I haven't seen them in eight years."
             ],
-            "dialogue4": [
+            "dialogueSet4": [
                 "I just wanted to file my papers. But I don't know why all of this is happening.",
                 "We're all gonna die when that timer runs out, aren't we?",
                 "It doesn't matter how it happens, but it will. And there was nothing we could've done.",
@@ -243,20 +242,21 @@
         },
         {
             "name": "Tim",
-            "dialogue1": [
+            "dialogueSet1": [
                 "That's what they want you to think, man.",
                 "I'm telling you, when that thing reaches zero, poof, we're all gonna be in a lab where they start poking us with big metal sticks until we keel over.",
                 "Doesn't look like it's working. Any other ideas?"
             ],
-            "dialogue2": [
-                "I don't like the way that things looking at me…"
+            "dialogueSet2": [
+                "How long has that thing even been there?",
+                "Well I don't like the way that things looking at me…"
             ],
-            "dialogue3": [
+            "dialogueSet3": [
                 "Nah, that's stupid.",
                 "When would aliens get in here? We've been standing here all day."
 
             ],
-            "dialogue4": [
+            "dialogueSet4": [
                 "I tried to tell you!",
                 "Nothing to do. I'm just one guy.",
                 "You have a wife?",
@@ -265,21 +265,22 @@
         },
         {
             "name": "Tom",
-            "dialogue1": [
+            "dialogueSet1": [
                 "I think you're full of fudge. Nothing's gonna happen when the timer reaches zero.",
                 "Sure it is.",
                 "You're full of it. They probably just put it in to keep us working harder.",
                 "Whatever it is, it's definitely nothing we have to worry about."
             ],
-            "dialogue2": [
+            "dialogueSet2": [
+                "I don't know, it just showed up one day. Or maybe it was always there?",
                 "It's a timer, it's not looking at anything."
             ],
-            "dialogue3": [
+            "dialogueSet3": [
                 "Maybe it's aliens that put this here.",
                 "You think it's a random omniscient doomsday clock, but aliens are too stupid an idea?",
                 "I don't know. But you don't know either!"
             ],
-            "dialogue4": [
+            "dialogueSet4": [
                 "Holy cow, maybe we are all gonna die.",
                 "Well look at you mate, if you knew all along why didn't you do anything?",
                 "Tell my wife I love her.",
@@ -288,7 +289,7 @@
         },
         {
             "name": "Walter",
-            "dialogue1": [
+            "dialogueSet1": [
                 "You know, I think the timer is a message.",
                 "I know we're not supposed to talk about it, but whatever, I'm kind of a rebel.",
                 "Anyway, I think it's a sign that we all need to stop all of what's happening in the world.",
@@ -296,7 +297,7 @@
                 "That's all we have to do!",
                 "Anyway that's why I'm not vaccinated."
             ],
-            "dialogue2": [
+            "dialogueSet2": [
                 "You know, I really do love working here. Spreadsheets get me into the creative flow.",
                 "Reminds me of when I went backpacking through Canada last year.",
                 "I got really in touch with my inner self. Especially when all the locals threw things at me and told me to leave.",
@@ -304,7 +305,7 @@
                 "I guess you could say I had a spiritual awakening or something.",
                 "I feel so much more enlightened since I got back. I'm so much better at spreadsheets now you would not believe."
             ],
-            "dialogue3": [
+            "dialogueSet3": [
                 "I saw the severed head that fell through the window.",
                 "Ugh, I feel so overwhelmed with everything that's happening. I need a meditation break.",
                 "...",
@@ -313,7 +314,7 @@
                 "You'll forget all about that head and that silly old timer.",
                 "Namaste, bud."
             ],
-            "dialogue4": [
+            "dialogueSet4": [
                 "You know, I'm not scared of the timer. It's just a big clock, I don't see what the big deal is.",
                 "As long as we're all in touch with our inner selves everything will be just fine.",
                 "I was at my yoga studio last weekend and Bethany told me that we could solve all the world's problems if only we could get our own internal conflicts resolved.",
@@ -325,7 +326,7 @@
         },
         {
             "name": "Boss Man",
-            "dialogue1": [
+            "dialogueSet1": [
                 "Hello! You must be our new hire.",
                 "I'm your boss, as I'm sure you've guess from my huge office here.",
                 "But don't think of me like your boss, I'm your friend!",
@@ -333,18 +334,18 @@
                 "So make yourself at home!",
                 "At your desk! While you're working!"
             ],
-            "dialogue2": [
+            "dialogueSet2": [
                 "I'd like to give a shout out to the boys for bringing in that new TV into the break room.",
                 "I figured it was good for morale so I let them keep it.",
                 "Just something cool bosses like me like to do. A reward for everyone's hard work!"
             ],
-            "dialogue3": [
+            "dialogueSet3": [
                 "Good news! Sales are up 20% and thoughts and prayers down 30%!",
                 "Also, sorry, we're taking away the TV in the break room.",
                 "The donut worker could kind of see it from his station, and it was really tanking his productivity.",
                 "And more productivity for him means more donuts for us! It's a win win!"
             ],
-            "dialogue4": [
+            "dialogueSet4": [
                 "Eeeeeee thing's are getting a little scary around here huh?",
                 "I think now's a good time to let everyone know I'll be going to Guam all of next week.",
                 "What? No I'm not going to get away from you all. I'll have you know it's my daughter's cousin's grandma's grandson's dad's divorce-versary party!",
@@ -356,14 +357,14 @@
         },
         {
             "name": "Donut Guy",
-            "dialogue1": [
+            "dialogueSet1": [
                 "Hi. Would you like a donut?",
                 "It's my job to offer you Suits donuts on your breaks.",
                 "I don't get a break.",
                 "Or a donut.",
                 "But that's okay. I spend all day making them. I don't even like donuts anymore."
             ],
-            "dialogue2": [
+            "dialogueSet2": [
                 "zzz",
                 "zzzzzzz",
                 "zzzzzzzzzzzzz",
@@ -374,7 +375,7 @@
                 "Keeps getting farther away it feels like.",
                 "Anyway we sell bear claws now. They're pretty good, if you want to try one."
             ],
-            "dialogue3": [
+            "dialogueSet3": [
                 "Hey, serious question.",
                 "Have you ever thought about what happens when the timer runs out?",
                 "No, you guys never do.",
@@ -387,7 +388,7 @@
                 "At least the rich man's grave is gonna be the same size as mine, brother.",
                 "Also I heard you guys found a severed head in the office wtf is that about???"
             ],
-            "dialogue4": [
+            "dialogueSet4": [
                 ""
             ]
         }
